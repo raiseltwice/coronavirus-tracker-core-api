@@ -1,0 +1,46 @@
+syntax = "proto3";
+package entities;
+option java_package = "ct.coreapi.protobuf";
+option java_outer_classname = "Entity";
+
+message Country {
+  int64 id = 1;
+  string country_name = 2;
+  oneof latitude {
+    bool latitude_is_null = 3;
+    double latitude_value = 4;
+  }
+  oneof longitude {
+    bool longitude_is_null = 5;
+    double longitude_value = 6;
+  }
+  repeated CountryCasesPerDate country_cases_per_date = 7;
+}
+
+message State {
+  int64 id = 1;
+  string state_name = 2;
+  oneof latitude {
+    bool latitude_is_null = 3;
+    double latitude_value = 4;
+  }
+  oneof longitude {
+    bool longitude_is_null = 5;
+    double longitude_value = 6;
+  }
+  repeated StateCasesPerDate state_cases_per_date = 7;
+}
+
+message CountryCasesPerDate {
+  int64 id = 1;
+  Country country = 2;
+  string date = 3;
+  int32 number_of_cases = 4;
+}
+
+message StateCasesPerDate {
+  int64 id = 1;
+  State state = 2;
+  string date = 3;
+  int32 number_of_cases = 4;
+}
