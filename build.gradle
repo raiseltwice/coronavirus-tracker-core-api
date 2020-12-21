@@ -1,17 +1,7 @@
 plugins {
     id 'java'
-    id "com.google.protobuf" version "0.8.14"
 }
 
 repositories {
     mavenCentral()
-}
-
-protobuf {
-    generatedFilesBaseDir = "$projectDir/src"
-}
-
-
-dependencies {
-    implementation 'com.google.protobuf:protobuf-java:3.11.0'
 }
