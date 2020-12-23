@@ -2900,30 +2900,17 @@ public final class Entity {
     long getId();
 
     /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    boolean hasCountry();
-    /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    ct.coreapi.protobuf.Entity.Country getCountry();
-    /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder();
-
-    /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     java.lang.String getDate();
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     com.google.protobuf.ByteString
         getDateBytes();
 
     /**
-     * <code>int32 number_of_cases = 4;</code>
+     * <code>int32 number_of_cases = 3;</code>
      */
     int getNumberOfCases();
   }
@@ -2979,25 +2966,12 @@ public final class Entity {
               break;
             }
             case 18: {
-              ct.coreapi.protobuf.Entity.Country.Builder subBuilder = null;
-              if (country_ != null) {
-                subBuilder = country_.toBuilder();
-              }
-              country_ = input.readMessage(ct.coreapi.protobuf.Entity.Country.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(country_);
-                country_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               date_ = s;
               break;
             }
-            case 32: {
+            case 24: {
 
               numberOfCases_ = input.readInt32();
               break;
@@ -3043,31 +3017,10 @@ public final class Entity {
       return id_;
     }
 
-    public static final int COUNTRY_FIELD_NUMBER = 2;
-    private ct.coreapi.protobuf.Entity.Country country_;
-    /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    public boolean hasCountry() {
-      return country_ != null;
-    }
-    /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    public ct.coreapi.protobuf.Entity.Country getCountry() {
-      return country_ == null ? ct.coreapi.protobuf.Entity.Country.getDefaultInstance() : country_;
-    }
-    /**
-     * <code>.entities.Country country = 2;</code>
-     */
-    public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder() {
-      return getCountry();
-    }
-
-    public static final int DATE_FIELD_NUMBER = 3;
+    public static final int DATE_FIELD_NUMBER = 2;
     private volatile java.lang.Object date_;
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     public java.lang.String getDate() {
       java.lang.Object ref = date_;
@@ -3082,7 +3035,7 @@ public final class Entity {
       }
     }
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDateBytes() {
@@ -3098,10 +3051,10 @@ public final class Entity {
       }
     }
 
-    public static final int NUMBER_OF_CASES_FIELD_NUMBER = 4;
+    public static final int NUMBER_OF_CASES_FIELD_NUMBER = 3;
     private int numberOfCases_;
     /**
-     * <code>int32 number_of_cases = 4;</code>
+     * <code>int32 number_of_cases = 3;</code>
      */
     public int getNumberOfCases() {
       return numberOfCases_;
@@ -3124,14 +3077,11 @@ public final class Entity {
       if (id_ != 0L) {
         output.writeInt64(1, id_);
       }
-      if (country_ != null) {
-        output.writeMessage(2, getCountry());
-      }
       if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, date_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, date_);
       }
       if (numberOfCases_ != 0) {
-        output.writeInt32(4, numberOfCases_);
+        output.writeInt32(3, numberOfCases_);
       }
       unknownFields.writeTo(output);
     }
@@ -3146,16 +3096,12 @@ public final class Entity {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, id_);
       }
-      if (country_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getCountry());
-      }
       if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, date_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, date_);
       }
       if (numberOfCases_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, numberOfCases_);
+          .computeInt32Size(3, numberOfCases_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3174,11 +3120,6 @@ public final class Entity {
 
       if (getId()
           != other.getId()) return false;
-      if (hasCountry() != other.hasCountry()) return false;
-      if (hasCountry()) {
-        if (!getCountry()
-            .equals(other.getCountry())) return false;
-      }
       if (!getDate()
           .equals(other.getDate())) return false;
       if (getNumberOfCases()
@@ -3197,10 +3138,6 @@ public final class Entity {
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getId());
-      if (hasCountry()) {
-        hash = (37 * hash) + COUNTRY_FIELD_NUMBER;
-        hash = (53 * hash) + getCountry().hashCode();
-      }
       hash = (37 * hash) + DATE_FIELD_NUMBER;
       hash = (53 * hash) + getDate().hashCode();
       hash = (37 * hash) + NUMBER_OF_CASES_FIELD_NUMBER;
@@ -3340,12 +3277,6 @@ public final class Entity {
         super.clear();
         id_ = 0L;
 
-        if (countryBuilder_ == null) {
-          country_ = null;
-        } else {
-          country_ = null;
-          countryBuilder_ = null;
-        }
         date_ = "";
 
         numberOfCases_ = 0;
@@ -3377,11 +3308,6 @@ public final class Entity {
       public ct.coreapi.protobuf.Entity.CountryCasesPerDate buildPartial() {
         ct.coreapi.protobuf.Entity.CountryCasesPerDate result = new ct.coreapi.protobuf.Entity.CountryCasesPerDate(this);
         result.id_ = id_;
-        if (countryBuilder_ == null) {
-          result.country_ = country_;
-        } else {
-          result.country_ = countryBuilder_.build();
-        }
         result.date_ = date_;
         result.numberOfCases_ = numberOfCases_;
         onBuilt();
@@ -3434,9 +3360,6 @@ public final class Entity {
         if (other == ct.coreapi.protobuf.Entity.CountryCasesPerDate.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
-        }
-        if (other.hasCountry()) {
-          mergeCountry(other.getCountry());
         }
         if (!other.getDate().isEmpty()) {
           date_ = other.date_;
@@ -3500,126 +3423,9 @@ public final class Entity {
         return this;
       }
 
-      private ct.coreapi.protobuf.Entity.Country country_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> countryBuilder_;
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public boolean hasCountry() {
-        return countryBuilder_ != null || country_ != null;
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.Country getCountry() {
-        if (countryBuilder_ == null) {
-          return country_ == null ? ct.coreapi.protobuf.Entity.Country.getDefaultInstance() : country_;
-        } else {
-          return countryBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public Builder setCountry(ct.coreapi.protobuf.Entity.Country value) {
-        if (countryBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          country_ = value;
-          onChanged();
-        } else {
-          countryBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public Builder setCountry(
-          ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
-        if (countryBuilder_ == null) {
-          country_ = builderForValue.build();
-          onChanged();
-        } else {
-          countryBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public Builder mergeCountry(ct.coreapi.protobuf.Entity.Country value) {
-        if (countryBuilder_ == null) {
-          if (country_ != null) {
-            country_ =
-              ct.coreapi.protobuf.Entity.Country.newBuilder(country_).mergeFrom(value).buildPartial();
-          } else {
-            country_ = value;
-          }
-          onChanged();
-        } else {
-          countryBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public Builder clearCountry() {
-        if (countryBuilder_ == null) {
-          country_ = null;
-          onChanged();
-        } else {
-          country_ = null;
-          countryBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.Country.Builder getCountryBuilder() {
-        
-        onChanged();
-        return getCountryFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder() {
-        if (countryBuilder_ != null) {
-          return countryBuilder_.getMessageOrBuilder();
-        } else {
-          return country_ == null ?
-              ct.coreapi.protobuf.Entity.Country.getDefaultInstance() : country_;
-        }
-      }
-      /**
-       * <code>.entities.Country country = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> 
-          getCountryFieldBuilder() {
-        if (countryBuilder_ == null) {
-          countryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder>(
-                  getCountry(),
-                  getParentForChildren(),
-                  isClean());
-          country_ = null;
-        }
-        return countryBuilder_;
-      }
-
       private java.lang.Object date_ = "";
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public java.lang.String getDate() {
         java.lang.Object ref = date_;
@@ -3634,7 +3440,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public com.google.protobuf.ByteString
           getDateBytes() {
@@ -3650,7 +3456,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder setDate(
           java.lang.String value) {
@@ -3663,7 +3469,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder clearDate() {
         
@@ -3672,7 +3478,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder setDateBytes(
           com.google.protobuf.ByteString value) {
@@ -3688,13 +3494,13 @@ public final class Entity {
 
       private int numberOfCases_ ;
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public int getNumberOfCases() {
         return numberOfCases_;
       }
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public Builder setNumberOfCases(int value) {
         
@@ -3703,7 +3509,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public Builder clearNumberOfCases() {
         
@@ -3774,30 +3580,17 @@ public final class Entity {
     long getId();
 
     /**
-     * <code>.entities.State state = 2;</code>
-     */
-    boolean hasState();
-    /**
-     * <code>.entities.State state = 2;</code>
-     */
-    ct.coreapi.protobuf.Entity.State getState();
-    /**
-     * <code>.entities.State state = 2;</code>
-     */
-    ct.coreapi.protobuf.Entity.StateOrBuilder getStateOrBuilder();
-
-    /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     java.lang.String getDate();
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     com.google.protobuf.ByteString
         getDateBytes();
 
     /**
-     * <code>int32 number_of_cases = 4;</code>
+     * <code>int32 number_of_cases = 3;</code>
      */
     int getNumberOfCases();
   }
@@ -3853,25 +3646,12 @@ public final class Entity {
               break;
             }
             case 18: {
-              ct.coreapi.protobuf.Entity.State.Builder subBuilder = null;
-              if (state_ != null) {
-                subBuilder = state_.toBuilder();
-              }
-              state_ = input.readMessage(ct.coreapi.protobuf.Entity.State.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(state_);
-                state_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               date_ = s;
               break;
             }
-            case 32: {
+            case 24: {
 
               numberOfCases_ = input.readInt32();
               break;
@@ -3917,31 +3697,10 @@ public final class Entity {
       return id_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 2;
-    private ct.coreapi.protobuf.Entity.State state_;
-    /**
-     * <code>.entities.State state = 2;</code>
-     */
-    public boolean hasState() {
-      return state_ != null;
-    }
-    /**
-     * <code>.entities.State state = 2;</code>
-     */
-    public ct.coreapi.protobuf.Entity.State getState() {
-      return state_ == null ? ct.coreapi.protobuf.Entity.State.getDefaultInstance() : state_;
-    }
-    /**
-     * <code>.entities.State state = 2;</code>
-     */
-    public ct.coreapi.protobuf.Entity.StateOrBuilder getStateOrBuilder() {
-      return getState();
-    }
-
-    public static final int DATE_FIELD_NUMBER = 3;
+    public static final int DATE_FIELD_NUMBER = 2;
     private volatile java.lang.Object date_;
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     public java.lang.String getDate() {
       java.lang.Object ref = date_;
@@ -3956,7 +3715,7 @@ public final class Entity {
       }
     }
     /**
-     * <code>string date = 3;</code>
+     * <code>string date = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDateBytes() {
@@ -3972,10 +3731,10 @@ public final class Entity {
       }
     }
 
-    public static final int NUMBER_OF_CASES_FIELD_NUMBER = 4;
+    public static final int NUMBER_OF_CASES_FIELD_NUMBER = 3;
     private int numberOfCases_;
     /**
-     * <code>int32 number_of_cases = 4;</code>
+     * <code>int32 number_of_cases = 3;</code>
      */
     public int getNumberOfCases() {
       return numberOfCases_;
@@ -3998,14 +3757,11 @@ public final class Entity {
       if (id_ != 0L) {
         output.writeInt64(1, id_);
       }
-      if (state_ != null) {
-        output.writeMessage(2, getState());
-      }
       if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, date_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, date_);
       }
       if (numberOfCases_ != 0) {
-        output.writeInt32(4, numberOfCases_);
+        output.writeInt32(3, numberOfCases_);
       }
       unknownFields.writeTo(output);
     }
@@ -4020,16 +3776,12 @@ public final class Entity {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, id_);
       }
-      if (state_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getState());
-      }
       if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, date_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, date_);
       }
       if (numberOfCases_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, numberOfCases_);
+          .computeInt32Size(3, numberOfCases_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4048,11 +3800,6 @@ public final class Entity {
 
       if (getId()
           != other.getId()) return false;
-      if (hasState() != other.hasState()) return false;
-      if (hasState()) {
-        if (!getState()
-            .equals(other.getState())) return false;
-      }
       if (!getDate()
           .equals(other.getDate())) return false;
       if (getNumberOfCases()
@@ -4071,10 +3818,6 @@ public final class Entity {
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getId());
-      if (hasState()) {
-        hash = (37 * hash) + STATE_FIELD_NUMBER;
-        hash = (53 * hash) + getState().hashCode();
-      }
       hash = (37 * hash) + DATE_FIELD_NUMBER;
       hash = (53 * hash) + getDate().hashCode();
       hash = (37 * hash) + NUMBER_OF_CASES_FIELD_NUMBER;
@@ -4214,12 +3957,6 @@ public final class Entity {
         super.clear();
         id_ = 0L;
 
-        if (stateBuilder_ == null) {
-          state_ = null;
-        } else {
-          state_ = null;
-          stateBuilder_ = null;
-        }
         date_ = "";
 
         numberOfCases_ = 0;
@@ -4251,11 +3988,6 @@ public final class Entity {
       public ct.coreapi.protobuf.Entity.StateCasesPerDate buildPartial() {
         ct.coreapi.protobuf.Entity.StateCasesPerDate result = new ct.coreapi.protobuf.Entity.StateCasesPerDate(this);
         result.id_ = id_;
-        if (stateBuilder_ == null) {
-          result.state_ = state_;
-        } else {
-          result.state_ = stateBuilder_.build();
-        }
         result.date_ = date_;
         result.numberOfCases_ = numberOfCases_;
         onBuilt();
@@ -4308,9 +4040,6 @@ public final class Entity {
         if (other == ct.coreapi.protobuf.Entity.StateCasesPerDate.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
-        }
-        if (other.hasState()) {
-          mergeState(other.getState());
         }
         if (!other.getDate().isEmpty()) {
           date_ = other.date_;
@@ -4374,126 +4103,9 @@ public final class Entity {
         return this;
       }
 
-      private ct.coreapi.protobuf.Entity.State state_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder> stateBuilder_;
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public boolean hasState() {
-        return stateBuilder_ != null || state_ != null;
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.State getState() {
-        if (stateBuilder_ == null) {
-          return state_ == null ? ct.coreapi.protobuf.Entity.State.getDefaultInstance() : state_;
-        } else {
-          return stateBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public Builder setState(ct.coreapi.protobuf.Entity.State value) {
-        if (stateBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          state_ = value;
-          onChanged();
-        } else {
-          stateBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public Builder setState(
-          ct.coreapi.protobuf.Entity.State.Builder builderForValue) {
-        if (stateBuilder_ == null) {
-          state_ = builderForValue.build();
-          onChanged();
-        } else {
-          stateBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public Builder mergeState(ct.coreapi.protobuf.Entity.State value) {
-        if (stateBuilder_ == null) {
-          if (state_ != null) {
-            state_ =
-              ct.coreapi.protobuf.Entity.State.newBuilder(state_).mergeFrom(value).buildPartial();
-          } else {
-            state_ = value;
-          }
-          onChanged();
-        } else {
-          stateBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public Builder clearState() {
-        if (stateBuilder_ == null) {
-          state_ = null;
-          onChanged();
-        } else {
-          state_ = null;
-          stateBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.State.Builder getStateBuilder() {
-        
-        onChanged();
-        return getStateFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      public ct.coreapi.protobuf.Entity.StateOrBuilder getStateOrBuilder() {
-        if (stateBuilder_ != null) {
-          return stateBuilder_.getMessageOrBuilder();
-        } else {
-          return state_ == null ?
-              ct.coreapi.protobuf.Entity.State.getDefaultInstance() : state_;
-        }
-      }
-      /**
-       * <code>.entities.State state = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder> 
-          getStateFieldBuilder() {
-        if (stateBuilder_ == null) {
-          stateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder>(
-                  getState(),
-                  getParentForChildren(),
-                  isClean());
-          state_ = null;
-        }
-        return stateBuilder_;
-      }
-
       private java.lang.Object date_ = "";
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public java.lang.String getDate() {
         java.lang.Object ref = date_;
@@ -4508,7 +4120,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public com.google.protobuf.ByteString
           getDateBytes() {
@@ -4524,7 +4136,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder setDate(
           java.lang.String value) {
@@ -4537,7 +4149,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder clearDate() {
         
@@ -4546,7 +4158,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>string date = 3;</code>
+       * <code>string date = 2;</code>
        */
       public Builder setDateBytes(
           com.google.protobuf.ByteString value) {
@@ -4562,13 +4174,13 @@ public final class Entity {
 
       private int numberOfCases_ ;
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public int getNumberOfCases() {
         return numberOfCases_;
       }
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public Builder setNumberOfCases(int value) {
         
@@ -4577,7 +4189,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>int32 number_of_cases = 4;</code>
+       * <code>int32 number_of_cases = 3;</code>
        */
       public Builder clearNumberOfCases() {
         
@@ -4679,13 +4291,12 @@ public final class Entity {
       "(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n\017lon" +
       "gitude_value\030\006 \001(\001H\001\0229\n\024state_cases_per_" +
       "date\030\007 \003(\0132\033.entities.StateCasesPerDateB" +
-      "\n\n\010latitudeB\013\n\tlongitude\"l\n\023CountryCases" +
-      "PerDate\022\n\n\002id\030\001 \001(\003\022\"\n\007country\030\002 \001(\0132\021.e" +
-      "ntities.Country\022\014\n\004date\030\003 \001(\t\022\027\n\017number_" +
-      "of_cases\030\004 \001(\005\"f\n\021StateCasesPerDate\022\n\n\002i" +
-      "d\030\001 \001(\003\022\036\n\005state\030\002 \001(\0132\017.entities.State\022" +
-      "\014\n\004date\030\003 \001(\t\022\027\n\017number_of_cases\030\004 \001(\005B\035" +
-      "\n\023ct.coreapi.protobufB\006Entityb\006proto3"
+      "\n\n\010latitudeB\013\n\tlongitude\"H\n\023CountryCases" +
+      "PerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017num" +
+      "ber_of_cases\030\003 \001(\005\"F\n\021StateCasesPerDate\022" +
+      "\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017number_of_c" +
+      "ases\030\003 \001(\005B\035\n\023ct.coreapi.protobufB\006Entit" +
+      "yb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4708,13 +4319,13 @@ public final class Entity {
     internal_static_entities_CountryCasesPerDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_CountryCasesPerDate_descriptor,
-        new java.lang.String[] { "Id", "Country", "Date", "NumberOfCases", });
+        new java.lang.String[] { "Id", "Date", "NumberOfCases", });
     internal_static_entities_StateCasesPerDate_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_entities_StateCasesPerDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_StateCasesPerDate_descriptor,
-        new java.lang.String[] { "Id", "State", "Date", "NumberOfCases", });
+        new java.lang.String[] { "Id", "Date", "NumberOfCases", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

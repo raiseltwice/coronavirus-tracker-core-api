@@ -33,14 +33,12 @@ message State {
 
 message CountryCasesPerDate {
   int64 id = 1;
-  Country country = 2;
-  string date = 3;
-  int32 number_of_cases = 4;
+  string date = 2;
+  int32 number_of_cases = 3;
 }
 
 message StateCasesPerDate {
   int64 id = 1;
-  State state = 2;
-  string date = 3;
-  int32 number_of_cases = 4;
+  string date = 2;
+  int32 number_of_cases = 3;
 }
