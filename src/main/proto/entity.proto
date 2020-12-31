@@ -3,6 +3,10 @@ package entities;
 option java_package = "ct.coreapi.protobuf";
 option java_outer_classname = "Entity";
 
+message Data {
+  repeated Country country = 1;
+}
+
 message Country {
   int64 id = 1;
   string country_name = 2;

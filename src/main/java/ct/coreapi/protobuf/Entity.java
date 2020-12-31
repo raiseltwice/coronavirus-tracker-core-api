@@ -14,6 +14,794 @@ public final class Entity {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  public interface DataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.Data)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    java.util.List<ct.coreapi.protobuf.Entity.Country> 
+        getCountryList();
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    ct.coreapi.protobuf.Entity.Country getCountry(int index);
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    int getCountryCount();
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
+        getCountryOrBuilderList();
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code entities.Data}
+   */
+  public  static final class Data extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:entities.Data)
+      DataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Data.newBuilder() to construct.
+    private Data(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Data() {
+      country_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Data();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Data(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                country_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              country_.add(
+                  input.readMessage(ct.coreapi.protobuf.Entity.Country.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          country_ = java.util.Collections.unmodifiableList(country_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return ct.coreapi.protobuf.Entity.internal_static_entities_Data_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return ct.coreapi.protobuf.Entity.internal_static_entities_Data_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              ct.coreapi.protobuf.Entity.Data.class, ct.coreapi.protobuf.Entity.Data.Builder.class);
+    }
+
+    public static final int COUNTRY_FIELD_NUMBER = 1;
+    private java.util.List<ct.coreapi.protobuf.Entity.Country> country_;
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountryList() {
+      return country_;
+    }
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
+        getCountryOrBuilderList() {
+      return country_;
+    }
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    public int getCountryCount() {
+      return country_.size();
+    }
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    public ct.coreapi.protobuf.Entity.Country getCountry(int index) {
+      return country_.get(index);
+    }
+    /**
+     * <code>repeated .entities.Country country = 1;</code>
+     */
+    public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+        int index) {
+      return country_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < country_.size(); i++) {
+        output.writeMessage(1, country_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < country_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, country_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof ct.coreapi.protobuf.Entity.Data)) {
+        return super.equals(obj);
+      }
+      ct.coreapi.protobuf.Entity.Data other = (ct.coreapi.protobuf.Entity.Data) obj;
+
+      if (!getCountryList()
+          .equals(other.getCountryList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getCountryCount() > 0) {
+        hash = (37 * hash) + COUNTRY_FIELD_NUMBER;
+        hash = (53 * hash) + getCountryList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ct.coreapi.protobuf.Entity.Data parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(ct.coreapi.protobuf.Entity.Data prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code entities.Data}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:entities.Data)
+        ct.coreapi.protobuf.Entity.DataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return ct.coreapi.protobuf.Entity.internal_static_entities_Data_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return ct.coreapi.protobuf.Entity.internal_static_entities_Data_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                ct.coreapi.protobuf.Entity.Data.class, ct.coreapi.protobuf.Entity.Data.Builder.class);
+      }
+
+      // Construct using ct.coreapi.protobuf.Entity.Data.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getCountryFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (countryBuilder_ == null) {
+          country_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          countryBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return ct.coreapi.protobuf.Entity.internal_static_entities_Data_descriptor;
+      }
+
+      @java.lang.Override
+      public ct.coreapi.protobuf.Entity.Data getDefaultInstanceForType() {
+        return ct.coreapi.protobuf.Entity.Data.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public ct.coreapi.protobuf.Entity.Data build() {
+        ct.coreapi.protobuf.Entity.Data result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public ct.coreapi.protobuf.Entity.Data buildPartial() {
+        ct.coreapi.protobuf.Entity.Data result = new ct.coreapi.protobuf.Entity.Data(this);
+        int from_bitField0_ = bitField0_;
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            country_ = java.util.Collections.unmodifiableList(country_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof ct.coreapi.protobuf.Entity.Data) {
+          return mergeFrom((ct.coreapi.protobuf.Entity.Data)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(ct.coreapi.protobuf.Entity.Data other) {
+        if (other == ct.coreapi.protobuf.Entity.Data.getDefaultInstance()) return this;
+        if (countryBuilder_ == null) {
+          if (!other.country_.isEmpty()) {
+            if (country_.isEmpty()) {
+              country_ = other.country_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureCountryIsMutable();
+              country_.addAll(other.country_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.country_.isEmpty()) {
+            if (countryBuilder_.isEmpty()) {
+              countryBuilder_.dispose();
+              countryBuilder_ = null;
+              country_ = other.country_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              countryBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getCountryFieldBuilder() : null;
+            } else {
+              countryBuilder_.addAllMessages(other.country_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        ct.coreapi.protobuf.Entity.Data parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (ct.coreapi.protobuf.Entity.Data) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<ct.coreapi.protobuf.Entity.Country> country_ =
+        java.util.Collections.emptyList();
+      private void ensureCountryIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          country_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>(country_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> countryBuilder_;
+
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountryList() {
+        if (countryBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(country_);
+        } else {
+          return countryBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public int getCountryCount() {
+        if (countryBuilder_ == null) {
+          return country_.size();
+        } else {
+          return countryBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public ct.coreapi.protobuf.Entity.Country getCountry(int index) {
+        if (countryBuilder_ == null) {
+          return country_.get(index);
+        } else {
+          return countryBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder setCountry(
+          int index, ct.coreapi.protobuf.Entity.Country value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.set(index, value);
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder setCountry(
+          int index, ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder addCountry(ct.coreapi.protobuf.Entity.Country value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.add(value);
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder addCountry(
+          int index, ct.coreapi.protobuf.Entity.Country value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.add(index, value);
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder addCountry(
+          ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.add(builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder addCountry(
+          int index, ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder addAllCountry(
+          java.lang.Iterable<? extends ct.coreapi.protobuf.Entity.Country> values) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, country_);
+          onChanged();
+        } else {
+          countryBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public Builder removeCountry(int index) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.remove(index);
+          onChanged();
+        } else {
+          countryBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public ct.coreapi.protobuf.Entity.Country.Builder getCountryBuilder(
+          int index) {
+        return getCountryFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+          int index) {
+        if (countryBuilder_ == null) {
+          return country_.get(index);  } else {
+          return countryBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
+           getCountryOrBuilderList() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(country_);
+        }
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public ct.coreapi.protobuf.Entity.Country.Builder addCountryBuilder() {
+        return getCountryFieldBuilder().addBuilder(
+            ct.coreapi.protobuf.Entity.Country.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public ct.coreapi.protobuf.Entity.Country.Builder addCountryBuilder(
+          int index) {
+        return getCountryFieldBuilder().addBuilder(
+            index, ct.coreapi.protobuf.Entity.Country.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .entities.Country country = 1;</code>
+       */
+      public java.util.List<ct.coreapi.protobuf.Entity.Country.Builder> 
+           getCountryBuilderList() {
+        return getCountryFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder>(
+                  country_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:entities.Data)
+    }
+
+    // @@protoc_insertion_point(class_scope:entities.Data)
+    private static final ct.coreapi.protobuf.Entity.Data DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new ct.coreapi.protobuf.Entity.Data();
+    }
+
+    public static ct.coreapi.protobuf.Entity.Data getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Data>
+        PARSER = new com.google.protobuf.AbstractParser<Data>() {
+      @java.lang.Override
+      public Data parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Data(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Data> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Data> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public ct.coreapi.protobuf.Entity.Data getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface CountryOrBuilder extends
       // @@protoc_insertion_point(interface_extends:entities.Country)
       com.google.protobuf.MessageOrBuilder {
@@ -4251,6 +5039,11 @@ public final class Entity {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_entities_Data_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_entities_Data_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_entities_Country_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -4279,49 +5072,56 @@ public final class Entity {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014entity.proto\022\010entities\"\361\001\n\007Country\022\n\n\002" +
-      "id\030\001 \001(\003\022\024\n\014country_name\030\002 \001(\t\022\032\n\020latitu" +
-      "de_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value\030\004 \001" +
-      "(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n\017lon" +
-      "gitude_value\030\006 \001(\001H\001\022=\n\026country_cases_pe" +
-      "r_date\030\007 \003(\0132\035.entities.CountryCasesPerD" +
-      "ateB\n\n\010latitudeB\013\n\tlongitude\"\351\001\n\005State\022\n" +
-      "\n\002id\030\001 \001(\003\022\022\n\nstate_name\030\002 \001(\t\022\032\n\020latitu" +
-      "de_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value\030\004 \001" +
-      "(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n\017lon" +
-      "gitude_value\030\006 \001(\001H\001\0229\n\024state_cases_per_" +
-      "date\030\007 \003(\0132\033.entities.StateCasesPerDateB" +
-      "\n\n\010latitudeB\013\n\tlongitude\"H\n\023CountryCases" +
-      "PerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017num" +
-      "ber_of_cases\030\003 \001(\005\"F\n\021StateCasesPerDate\022" +
-      "\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017number_of_c" +
-      "ases\030\003 \001(\005B\035\n\023ct.coreapi.protobufB\006Entit" +
-      "yb\006proto3"
+      "\n\014entity.proto\022\010entities\"*\n\004Data\022\"\n\007coun" +
+      "try\030\001 \003(\0132\021.entities.Country\"\361\001\n\007Country" +
+      "\022\n\n\002id\030\001 \001(\003\022\024\n\014country_name\030\002 \001(\t\022\032\n\020la" +
+      "titude_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value" +
+      "\030\004 \001(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n" +
+      "\017longitude_value\030\006 \001(\001H\001\022=\n\026country_case" +
+      "s_per_date\030\007 \003(\0132\035.entities.CountryCases" +
+      "PerDateB\n\n\010latitudeB\013\n\tlongitude\"\351\001\n\005Sta" +
+      "te\022\n\n\002id\030\001 \001(\003\022\022\n\nstate_name\030\002 \001(\t\022\032\n\020la" +
+      "titude_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value" +
+      "\030\004 \001(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n" +
+      "\017longitude_value\030\006 \001(\001H\001\0229\n\024state_cases_" +
+      "per_date\030\007 \003(\0132\033.entities.StateCasesPerD" +
+      "ateB\n\n\010latitudeB\013\n\tlongitude\"H\n\023CountryC" +
+      "asesPerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n" +
+      "\017number_of_cases\030\003 \001(\005\"F\n\021StateCasesPerD" +
+      "ate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017number_" +
+      "of_cases\030\003 \001(\005B\035\n\023ct.coreapi.protobufB\006E" +
+      "ntityb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_entities_Country_descriptor =
+    internal_static_entities_Data_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_entities_Data_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_entities_Data_descriptor,
+        new java.lang.String[] { "Country", });
+    internal_static_entities_Country_descriptor =
+      getDescriptor().getMessageTypes().get(1);
     internal_static_entities_Country_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_Country_descriptor,
         new java.lang.String[] { "Id", "CountryName", "LatitudeIsNull", "LatitudeValue", "LongitudeIsNull", "LongitudeValue", "CountryCasesPerDate", "Latitude", "Longitude", });
     internal_static_entities_State_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_entities_State_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_State_descriptor,
         new java.lang.String[] { "Id", "StateName", "LatitudeIsNull", "LatitudeValue", "LongitudeIsNull", "LongitudeValue", "StateCasesPerDate", "Latitude", "Longitude", });
     internal_static_entities_CountryCasesPerDate_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_entities_CountryCasesPerDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_CountryCasesPerDate_descriptor,
         new java.lang.String[] { "Id", "Date", "NumberOfCases", });
     internal_static_entities_StateCasesPerDate_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_entities_StateCasesPerDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_StateCasesPerDate_descriptor,
