@@ -10,11 +10,11 @@ message Data {
 message Country {
   int64 id = 1;
   string country_name = 2;
-  oneof latitude_ {
+  oneof latitude_nullable {
     bool latitude_is_null = 3;
     double latitude = 4;
   }
-  oneof longitude_ {
+  oneof longitude_nullable {
     bool longitude_is_null = 5;
     double longitude = 6;
   }
@@ -25,11 +25,11 @@ message Country {
 message State {
   int64 id = 1;
   string state_name = 2;
-  oneof latitude_ {
+  oneof latitude_nullable {
     bool latitude_is_null = 3;
     double latitude = 4;
   }
-  oneof longitude_ {
+  oneof longitude_nullable {
     bool longitude_is_null = 5;
     double longitude = 6;
   }

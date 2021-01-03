@@ -889,9 +889,9 @@ public final class Entity {
     ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder getCountryCasesPerDateOrBuilder(
         int index);
 
-    public ct.coreapi.protobuf.Entity.Country.LatitudeCase getLatitudeCase();
+    public ct.coreapi.protobuf.Entity.Country.LatitudeNullableCase getLatitudeNullableCase();
 
-    public ct.coreapi.protobuf.Entity.Country.LongitudeCase getLongitudeCase();
+    public ct.coreapi.protobuf.Entity.Country.LongitudeNullableCase getLongitudeNullableCase();
   }
   /**
    * Protobuf type {@code entities.Country}
@@ -954,23 +954,23 @@ public final class Entity {
               break;
             }
             case 24: {
-              latitudeCase_ = 3;
-              latitude_ = input.readBool();
+              latitudeNullableCase_ = 3;
+              latitudeNullable_ = input.readBool();
               break;
             }
             case 33: {
-              latitudeCase_ = 4;
-              latitude_ = input.readDouble();
+              latitudeNullableCase_ = 4;
+              latitudeNullable_ = input.readDouble();
               break;
             }
             case 40: {
-              longitudeCase_ = 5;
-              longitude_ = input.readBool();
+              longitudeNullableCase_ = 5;
+              longitudeNullable_ = input.readBool();
               break;
             }
             case 49: {
-              longitudeCase_ = 6;
-              longitude_ = input.readDouble();
+              longitudeNullableCase_ = 6;
+              longitudeNullable_ = input.readDouble();
               break;
             }
             case 58: {
@@ -1029,30 +1029,30 @@ public final class Entity {
               ct.coreapi.protobuf.Entity.Country.class, ct.coreapi.protobuf.Entity.Country.Builder.class);
     }
 
-    private int latitudeCase_ = 0;
-    private java.lang.Object latitude_;
-    public enum LatitudeCase
+    private int latitudeNullableCase_ = 0;
+    private java.lang.Object latitudeNullable_;
+    public enum LatitudeNullableCase
         implements com.google.protobuf.Internal.EnumLite {
       LATITUDE_IS_NULL(3),
       LATITUDE(4),
-      LATITUDE_NOT_SET(0);
+      LATITUDENULLABLE_NOT_SET(0);
       private final int value;
-      private LatitudeCase(int value) {
+      private LatitudeNullableCase(int value) {
         this.value = value;
       }
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static LatitudeCase valueOf(int value) {
+      public static LatitudeNullableCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static LatitudeCase forNumber(int value) {
+      public static LatitudeNullableCase forNumber(int value) {
         switch (value) {
           case 3: return LATITUDE_IS_NULL;
           case 4: return LATITUDE;
-          case 0: return LATITUDE_NOT_SET;
+          case 0: return LATITUDENULLABLE_NOT_SET;
           default: return null;
         }
       }
@@ -1061,36 +1061,36 @@ public final class Entity {
       }
     };
 
-    public LatitudeCase
-    getLatitudeCase() {
-      return LatitudeCase.forNumber(
-          latitudeCase_);
+    public LatitudeNullableCase
+    getLatitudeNullableCase() {
+      return LatitudeNullableCase.forNumber(
+          latitudeNullableCase_);
     }
 
-    private int longitudeCase_ = 0;
-    private java.lang.Object longitude_;
-    public enum LongitudeCase
+    private int longitudeNullableCase_ = 0;
+    private java.lang.Object longitudeNullable_;
+    public enum LongitudeNullableCase
         implements com.google.protobuf.Internal.EnumLite {
       LONGITUDE_IS_NULL(5),
       LONGITUDE(6),
-      LONGITUDE_NOT_SET(0);
+      LONGITUDENULLABLE_NOT_SET(0);
       private final int value;
-      private LongitudeCase(int value) {
+      private LongitudeNullableCase(int value) {
         this.value = value;
       }
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static LongitudeCase valueOf(int value) {
+      public static LongitudeNullableCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static LongitudeCase forNumber(int value) {
+      public static LongitudeNullableCase forNumber(int value) {
         switch (value) {
           case 5: return LONGITUDE_IS_NULL;
           case 6: return LONGITUDE;
-          case 0: return LONGITUDE_NOT_SET;
+          case 0: return LONGITUDENULLABLE_NOT_SET;
           default: return null;
         }
       }
@@ -1099,10 +1099,10 @@ public final class Entity {
       }
     };
 
-    public LongitudeCase
-    getLongitudeCase() {
-      return LongitudeCase.forNumber(
-          longitudeCase_);
+    public LongitudeNullableCase
+    getLongitudeNullableCase() {
+      return LongitudeNullableCase.forNumber(
+          longitudeNullableCase_);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -1153,8 +1153,8 @@ public final class Entity {
      * <code>bool latitude_is_null = 3;</code>
      */
     public boolean getLatitudeIsNull() {
-      if (latitudeCase_ == 3) {
-        return (java.lang.Boolean) latitude_;
+      if (latitudeNullableCase_ == 3) {
+        return (java.lang.Boolean) latitudeNullable_;
       }
       return false;
     }
@@ -1164,8 +1164,8 @@ public final class Entity {
      * <code>double latitude = 4;</code>
      */
     public double getLatitude() {
-      if (latitudeCase_ == 4) {
-        return (java.lang.Double) latitude_;
+      if (latitudeNullableCase_ == 4) {
+        return (java.lang.Double) latitudeNullable_;
       }
       return 0D;
     }
@@ -1175,8 +1175,8 @@ public final class Entity {
      * <code>bool longitude_is_null = 5;</code>
      */
     public boolean getLongitudeIsNull() {
-      if (longitudeCase_ == 5) {
-        return (java.lang.Boolean) longitude_;
+      if (longitudeNullableCase_ == 5) {
+        return (java.lang.Boolean) longitudeNullable_;
       }
       return false;
     }
@@ -1186,8 +1186,8 @@ public final class Entity {
      * <code>double longitude = 6;</code>
      */
     public double getLongitude() {
-      if (longitudeCase_ == 6) {
-        return (java.lang.Double) longitude_;
+      if (longitudeNullableCase_ == 6) {
+        return (java.lang.Double) longitudeNullable_;
       }
       return 0D;
     }
@@ -1282,21 +1282,21 @@ public final class Entity {
       if (!getCountryNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, countryName_);
       }
-      if (latitudeCase_ == 3) {
+      if (latitudeNullableCase_ == 3) {
         output.writeBool(
-            3, (boolean)((java.lang.Boolean) latitude_));
+            3, (boolean)((java.lang.Boolean) latitudeNullable_));
       }
-      if (latitudeCase_ == 4) {
+      if (latitudeNullableCase_ == 4) {
         output.writeDouble(
-            4, (double)((java.lang.Double) latitude_));
+            4, (double)((java.lang.Double) latitudeNullable_));
       }
-      if (longitudeCase_ == 5) {
+      if (longitudeNullableCase_ == 5) {
         output.writeBool(
-            5, (boolean)((java.lang.Boolean) longitude_));
+            5, (boolean)((java.lang.Boolean) longitudeNullable_));
       }
-      if (longitudeCase_ == 6) {
+      if (longitudeNullableCase_ == 6) {
         output.writeDouble(
-            6, (double)((java.lang.Double) longitude_));
+            6, (double)((java.lang.Double) longitudeNullable_));
       }
       for (int i = 0; i < states_.size(); i++) {
         output.writeMessage(7, states_.get(i));
@@ -1320,25 +1320,25 @@ public final class Entity {
       if (!getCountryNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, countryName_);
       }
-      if (latitudeCase_ == 3) {
+      if (latitudeNullableCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(
-              3, (boolean)((java.lang.Boolean) latitude_));
+              3, (boolean)((java.lang.Boolean) latitudeNullable_));
       }
-      if (latitudeCase_ == 4) {
+      if (latitudeNullableCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(
-              4, (double)((java.lang.Double) latitude_));
+              4, (double)((java.lang.Double) latitudeNullable_));
       }
-      if (longitudeCase_ == 5) {
+      if (longitudeNullableCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(
-              5, (boolean)((java.lang.Boolean) longitude_));
+              5, (boolean)((java.lang.Boolean) longitudeNullable_));
       }
-      if (longitudeCase_ == 6) {
+      if (longitudeNullableCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(
-              6, (double)((java.lang.Double) longitude_));
+              6, (double)((java.lang.Double) longitudeNullable_));
       }
       for (int i = 0; i < states_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1371,8 +1371,8 @@ public final class Entity {
           .equals(other.getStatesList())) return false;
       if (!getCountryCasesPerDateList()
           .equals(other.getCountryCasesPerDateList())) return false;
-      if (!getLatitudeCase().equals(other.getLatitudeCase())) return false;
-      switch (latitudeCase_) {
+      if (!getLatitudeNullableCase().equals(other.getLatitudeNullableCase())) return false;
+      switch (latitudeNullableCase_) {
         case 3:
           if (getLatitudeIsNull()
               != other.getLatitudeIsNull()) return false;
@@ -1385,8 +1385,8 @@ public final class Entity {
         case 0:
         default:
       }
-      if (!getLongitudeCase().equals(other.getLongitudeCase())) return false;
-      switch (longitudeCase_) {
+      if (!getLongitudeNullableCase().equals(other.getLongitudeNullableCase())) return false;
+      switch (longitudeNullableCase_) {
         case 5:
           if (getLongitudeIsNull()
               != other.getLongitudeIsNull()) return false;
@@ -1423,7 +1423,7 @@ public final class Entity {
         hash = (37 * hash) + COUNTRY_CASES_PER_DATE_FIELD_NUMBER;
         hash = (53 * hash) + getCountryCasesPerDateList().hashCode();
       }
-      switch (latitudeCase_) {
+      switch (latitudeNullableCase_) {
         case 3:
           hash = (37 * hash) + LATITUDE_IS_NULL_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -1437,7 +1437,7 @@ public final class Entity {
         case 0:
         default:
       }
-      switch (longitudeCase_) {
+      switch (longitudeNullableCase_) {
         case 5:
           hash = (37 * hash) + LONGITUDE_IS_NULL_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -1602,10 +1602,10 @@ public final class Entity {
         } else {
           countryCasesPerDateBuilder_.clear();
         }
-        latitudeCase_ = 0;
-        latitude_ = null;
-        longitudeCase_ = 0;
-        longitude_ = null;
+        latitudeNullableCase_ = 0;
+        latitudeNullable_ = null;
+        longitudeNullableCase_ = 0;
+        longitudeNullable_ = null;
         return this;
       }
 
@@ -1635,17 +1635,17 @@ public final class Entity {
         int from_bitField0_ = bitField0_;
         result.id_ = id_;
         result.countryName_ = countryName_;
-        if (latitudeCase_ == 3) {
-          result.latitude_ = latitude_;
+        if (latitudeNullableCase_ == 3) {
+          result.latitudeNullable_ = latitudeNullable_;
         }
-        if (latitudeCase_ == 4) {
-          result.latitude_ = latitude_;
+        if (latitudeNullableCase_ == 4) {
+          result.latitudeNullable_ = latitudeNullable_;
         }
-        if (longitudeCase_ == 5) {
-          result.longitude_ = longitude_;
+        if (longitudeNullableCase_ == 5) {
+          result.longitudeNullable_ = longitudeNullable_;
         }
-        if (longitudeCase_ == 6) {
-          result.longitude_ = longitude_;
+        if (longitudeNullableCase_ == 6) {
+          result.longitudeNullable_ = longitudeNullable_;
         }
         if (statesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -1665,8 +1665,8 @@ public final class Entity {
         } else {
           result.countryCasesPerDate_ = countryCasesPerDateBuilder_.build();
         }
-        result.latitudeCase_ = latitudeCase_;
-        result.longitudeCase_ = longitudeCase_;
+        result.latitudeNullableCase_ = latitudeNullableCase_;
+        result.longitudeNullableCase_ = longitudeNullableCase_;
         onBuilt();
         return result;
       }
@@ -1774,7 +1774,7 @@ public final class Entity {
             }
           }
         }
-        switch (other.getLatitudeCase()) {
+        switch (other.getLatitudeNullableCase()) {
           case LATITUDE_IS_NULL: {
             setLatitudeIsNull(other.getLatitudeIsNull());
             break;
@@ -1783,11 +1783,11 @@ public final class Entity {
             setLatitude(other.getLatitude());
             break;
           }
-          case LATITUDE_NOT_SET: {
+          case LATITUDENULLABLE_NOT_SET: {
             break;
           }
         }
-        switch (other.getLongitudeCase()) {
+        switch (other.getLongitudeNullableCase()) {
           case LONGITUDE_IS_NULL: {
             setLongitudeIsNull(other.getLongitudeIsNull());
             break;
@@ -1796,7 +1796,7 @@ public final class Entity {
             setLongitude(other.getLongitude());
             break;
           }
-          case LONGITUDE_NOT_SET: {
+          case LONGITUDENULLABLE_NOT_SET: {
             break;
           }
         }
@@ -1828,32 +1828,32 @@ public final class Entity {
         }
         return this;
       }
-      private int latitudeCase_ = 0;
-      private java.lang.Object latitude_;
-      public LatitudeCase
-          getLatitudeCase() {
-        return LatitudeCase.forNumber(
-            latitudeCase_);
+      private int latitudeNullableCase_ = 0;
+      private java.lang.Object latitudeNullable_;
+      public LatitudeNullableCase
+          getLatitudeNullableCase() {
+        return LatitudeNullableCase.forNumber(
+            latitudeNullableCase_);
       }
 
-      public Builder clearLatitude() {
-        latitudeCase_ = 0;
-        latitude_ = null;
+      public Builder clearLatitudeNullable() {
+        latitudeNullableCase_ = 0;
+        latitudeNullable_ = null;
         onChanged();
         return this;
       }
 
-      private int longitudeCase_ = 0;
-      private java.lang.Object longitude_;
-      public LongitudeCase
-          getLongitudeCase() {
-        return LongitudeCase.forNumber(
-            longitudeCase_);
+      private int longitudeNullableCase_ = 0;
+      private java.lang.Object longitudeNullable_;
+      public LongitudeNullableCase
+          getLongitudeNullableCase() {
+        return LongitudeNullableCase.forNumber(
+            longitudeNullableCase_);
       }
 
-      public Builder clearLongitude() {
-        longitudeCase_ = 0;
-        longitude_ = null;
+      public Builder clearLongitudeNullable() {
+        longitudeNullableCase_ = 0;
+        longitudeNullable_ = null;
         onChanged();
         return this;
       }
@@ -1959,8 +1959,8 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public boolean getLatitudeIsNull() {
-        if (latitudeCase_ == 3) {
-          return (java.lang.Boolean) latitude_;
+        if (latitudeNullableCase_ == 3) {
+          return (java.lang.Boolean) latitudeNullable_;
         }
         return false;
       }
@@ -1968,8 +1968,8 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public Builder setLatitudeIsNull(boolean value) {
-        latitudeCase_ = 3;
-        latitude_ = value;
+        latitudeNullableCase_ = 3;
+        latitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -1977,9 +1977,9 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public Builder clearLatitudeIsNull() {
-        if (latitudeCase_ == 3) {
-          latitudeCase_ = 0;
-          latitude_ = null;
+        if (latitudeNullableCase_ == 3) {
+          latitudeNullableCase_ = 0;
+          latitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -1989,8 +1989,8 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public double getLatitude() {
-        if (latitudeCase_ == 4) {
-          return (java.lang.Double) latitude_;
+        if (latitudeNullableCase_ == 4) {
+          return (java.lang.Double) latitudeNullable_;
         }
         return 0D;
       }
@@ -1998,8 +1998,8 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public Builder setLatitude(double value) {
-        latitudeCase_ = 4;
-        latitude_ = value;
+        latitudeNullableCase_ = 4;
+        latitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -2007,9 +2007,9 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public Builder clearLatitude() {
-        if (latitudeCase_ == 4) {
-          latitudeCase_ = 0;
-          latitude_ = null;
+        if (latitudeNullableCase_ == 4) {
+          latitudeNullableCase_ = 0;
+          latitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -2019,8 +2019,8 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public boolean getLongitudeIsNull() {
-        if (longitudeCase_ == 5) {
-          return (java.lang.Boolean) longitude_;
+        if (longitudeNullableCase_ == 5) {
+          return (java.lang.Boolean) longitudeNullable_;
         }
         return false;
       }
@@ -2028,8 +2028,8 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public Builder setLongitudeIsNull(boolean value) {
-        longitudeCase_ = 5;
-        longitude_ = value;
+        longitudeNullableCase_ = 5;
+        longitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -2037,9 +2037,9 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public Builder clearLongitudeIsNull() {
-        if (longitudeCase_ == 5) {
-          longitudeCase_ = 0;
-          longitude_ = null;
+        if (longitudeNullableCase_ == 5) {
+          longitudeNullableCase_ = 0;
+          longitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -2049,8 +2049,8 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public double getLongitude() {
-        if (longitudeCase_ == 6) {
-          return (java.lang.Double) longitude_;
+        if (longitudeNullableCase_ == 6) {
+          return (java.lang.Double) longitudeNullable_;
         }
         return 0D;
       }
@@ -2058,8 +2058,8 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public Builder setLongitude(double value) {
-        longitudeCase_ = 6;
-        longitude_ = value;
+        longitudeNullableCase_ = 6;
+        longitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -2067,9 +2067,9 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public Builder clearLongitude() {
-        if (longitudeCase_ == 6) {
-          longitudeCase_ = 0;
-          longitude_ = null;
+        if (longitudeNullableCase_ == 6) {
+          longitudeNullableCase_ = 0;
+          longitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -2670,9 +2670,9 @@ public final class Entity {
     ct.coreapi.protobuf.Entity.StateCasesPerDateOrBuilder getStateCasesPerDateOrBuilder(
         int index);
 
-    public ct.coreapi.protobuf.Entity.State.LatitudeCase getLatitudeCase();
+    public ct.coreapi.protobuf.Entity.State.LatitudeNullableCase getLatitudeNullableCase();
 
-    public ct.coreapi.protobuf.Entity.State.LongitudeCase getLongitudeCase();
+    public ct.coreapi.protobuf.Entity.State.LongitudeNullableCase getLongitudeNullableCase();
   }
   /**
    * Protobuf type {@code entities.State}
@@ -2734,23 +2734,23 @@ public final class Entity {
               break;
             }
             case 24: {
-              latitudeCase_ = 3;
-              latitude_ = input.readBool();
+              latitudeNullableCase_ = 3;
+              latitudeNullable_ = input.readBool();
               break;
             }
             case 33: {
-              latitudeCase_ = 4;
-              latitude_ = input.readDouble();
+              latitudeNullableCase_ = 4;
+              latitudeNullable_ = input.readDouble();
               break;
             }
             case 40: {
-              longitudeCase_ = 5;
-              longitude_ = input.readBool();
+              longitudeNullableCase_ = 5;
+              longitudeNullable_ = input.readBool();
               break;
             }
             case 49: {
-              longitudeCase_ = 6;
-              longitude_ = input.readDouble();
+              longitudeNullableCase_ = 6;
+              longitudeNullable_ = input.readDouble();
               break;
             }
             case 58: {
@@ -2797,30 +2797,30 @@ public final class Entity {
               ct.coreapi.protobuf.Entity.State.class, ct.coreapi.protobuf.Entity.State.Builder.class);
     }
 
-    private int latitudeCase_ = 0;
-    private java.lang.Object latitude_;
-    public enum LatitudeCase
+    private int latitudeNullableCase_ = 0;
+    private java.lang.Object latitudeNullable_;
+    public enum LatitudeNullableCase
         implements com.google.protobuf.Internal.EnumLite {
       LATITUDE_IS_NULL(3),
       LATITUDE(4),
-      LATITUDE_NOT_SET(0);
+      LATITUDENULLABLE_NOT_SET(0);
       private final int value;
-      private LatitudeCase(int value) {
+      private LatitudeNullableCase(int value) {
         this.value = value;
       }
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static LatitudeCase valueOf(int value) {
+      public static LatitudeNullableCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static LatitudeCase forNumber(int value) {
+      public static LatitudeNullableCase forNumber(int value) {
         switch (value) {
           case 3: return LATITUDE_IS_NULL;
           case 4: return LATITUDE;
-          case 0: return LATITUDE_NOT_SET;
+          case 0: return LATITUDENULLABLE_NOT_SET;
           default: return null;
         }
       }
@@ -2829,36 +2829,36 @@ public final class Entity {
       }
     };
 
-    public LatitudeCase
-    getLatitudeCase() {
-      return LatitudeCase.forNumber(
-          latitudeCase_);
+    public LatitudeNullableCase
+    getLatitudeNullableCase() {
+      return LatitudeNullableCase.forNumber(
+          latitudeNullableCase_);
     }
 
-    private int longitudeCase_ = 0;
-    private java.lang.Object longitude_;
-    public enum LongitudeCase
+    private int longitudeNullableCase_ = 0;
+    private java.lang.Object longitudeNullable_;
+    public enum LongitudeNullableCase
         implements com.google.protobuf.Internal.EnumLite {
       LONGITUDE_IS_NULL(5),
       LONGITUDE(6),
-      LONGITUDE_NOT_SET(0);
+      LONGITUDENULLABLE_NOT_SET(0);
       private final int value;
-      private LongitudeCase(int value) {
+      private LongitudeNullableCase(int value) {
         this.value = value;
       }
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static LongitudeCase valueOf(int value) {
+      public static LongitudeNullableCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static LongitudeCase forNumber(int value) {
+      public static LongitudeNullableCase forNumber(int value) {
         switch (value) {
           case 5: return LONGITUDE_IS_NULL;
           case 6: return LONGITUDE;
-          case 0: return LONGITUDE_NOT_SET;
+          case 0: return LONGITUDENULLABLE_NOT_SET;
           default: return null;
         }
       }
@@ -2867,10 +2867,10 @@ public final class Entity {
       }
     };
 
-    public LongitudeCase
-    getLongitudeCase() {
-      return LongitudeCase.forNumber(
-          longitudeCase_);
+    public LongitudeNullableCase
+    getLongitudeNullableCase() {
+      return LongitudeNullableCase.forNumber(
+          longitudeNullableCase_);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -2921,8 +2921,8 @@ public final class Entity {
      * <code>bool latitude_is_null = 3;</code>
      */
     public boolean getLatitudeIsNull() {
-      if (latitudeCase_ == 3) {
-        return (java.lang.Boolean) latitude_;
+      if (latitudeNullableCase_ == 3) {
+        return (java.lang.Boolean) latitudeNullable_;
       }
       return false;
     }
@@ -2932,8 +2932,8 @@ public final class Entity {
      * <code>double latitude = 4;</code>
      */
     public double getLatitude() {
-      if (latitudeCase_ == 4) {
-        return (java.lang.Double) latitude_;
+      if (latitudeNullableCase_ == 4) {
+        return (java.lang.Double) latitudeNullable_;
       }
       return 0D;
     }
@@ -2943,8 +2943,8 @@ public final class Entity {
      * <code>bool longitude_is_null = 5;</code>
      */
     public boolean getLongitudeIsNull() {
-      if (longitudeCase_ == 5) {
-        return (java.lang.Boolean) longitude_;
+      if (longitudeNullableCase_ == 5) {
+        return (java.lang.Boolean) longitudeNullable_;
       }
       return false;
     }
@@ -2954,8 +2954,8 @@ public final class Entity {
      * <code>double longitude = 6;</code>
      */
     public double getLongitude() {
-      if (longitudeCase_ == 6) {
-        return (java.lang.Double) longitude_;
+      if (longitudeNullableCase_ == 6) {
+        return (java.lang.Double) longitudeNullable_;
       }
       return 0D;
     }
@@ -3015,21 +3015,21 @@ public final class Entity {
       if (!getStateNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, stateName_);
       }
-      if (latitudeCase_ == 3) {
+      if (latitudeNullableCase_ == 3) {
         output.writeBool(
-            3, (boolean)((java.lang.Boolean) latitude_));
+            3, (boolean)((java.lang.Boolean) latitudeNullable_));
       }
-      if (latitudeCase_ == 4) {
+      if (latitudeNullableCase_ == 4) {
         output.writeDouble(
-            4, (double)((java.lang.Double) latitude_));
+            4, (double)((java.lang.Double) latitudeNullable_));
       }
-      if (longitudeCase_ == 5) {
+      if (longitudeNullableCase_ == 5) {
         output.writeBool(
-            5, (boolean)((java.lang.Boolean) longitude_));
+            5, (boolean)((java.lang.Boolean) longitudeNullable_));
       }
-      if (longitudeCase_ == 6) {
+      if (longitudeNullableCase_ == 6) {
         output.writeDouble(
-            6, (double)((java.lang.Double) longitude_));
+            6, (double)((java.lang.Double) longitudeNullable_));
       }
       for (int i = 0; i < stateCasesPerDate_.size(); i++) {
         output.writeMessage(7, stateCasesPerDate_.get(i));
@@ -3050,25 +3050,25 @@ public final class Entity {
       if (!getStateNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, stateName_);
       }
-      if (latitudeCase_ == 3) {
+      if (latitudeNullableCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(
-              3, (boolean)((java.lang.Boolean) latitude_));
+              3, (boolean)((java.lang.Boolean) latitudeNullable_));
       }
-      if (latitudeCase_ == 4) {
+      if (latitudeNullableCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(
-              4, (double)((java.lang.Double) latitude_));
+              4, (double)((java.lang.Double) latitudeNullable_));
       }
-      if (longitudeCase_ == 5) {
+      if (longitudeNullableCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(
-              5, (boolean)((java.lang.Boolean) longitude_));
+              5, (boolean)((java.lang.Boolean) longitudeNullable_));
       }
-      if (longitudeCase_ == 6) {
+      if (longitudeNullableCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(
-              6, (double)((java.lang.Double) longitude_));
+              6, (double)((java.lang.Double) longitudeNullable_));
       }
       for (int i = 0; i < stateCasesPerDate_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -3095,8 +3095,8 @@ public final class Entity {
           .equals(other.getStateName())) return false;
       if (!getStateCasesPerDateList()
           .equals(other.getStateCasesPerDateList())) return false;
-      if (!getLatitudeCase().equals(other.getLatitudeCase())) return false;
-      switch (latitudeCase_) {
+      if (!getLatitudeNullableCase().equals(other.getLatitudeNullableCase())) return false;
+      switch (latitudeNullableCase_) {
         case 3:
           if (getLatitudeIsNull()
               != other.getLatitudeIsNull()) return false;
@@ -3109,8 +3109,8 @@ public final class Entity {
         case 0:
         default:
       }
-      if (!getLongitudeCase().equals(other.getLongitudeCase())) return false;
-      switch (longitudeCase_) {
+      if (!getLongitudeNullableCase().equals(other.getLongitudeNullableCase())) return false;
+      switch (longitudeNullableCase_) {
         case 5:
           if (getLongitudeIsNull()
               != other.getLongitudeIsNull()) return false;
@@ -3143,7 +3143,7 @@ public final class Entity {
         hash = (37 * hash) + STATE_CASES_PER_DATE_FIELD_NUMBER;
         hash = (53 * hash) + getStateCasesPerDateList().hashCode();
       }
-      switch (latitudeCase_) {
+      switch (latitudeNullableCase_) {
         case 3:
           hash = (37 * hash) + LATITUDE_IS_NULL_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -3157,7 +3157,7 @@ public final class Entity {
         case 0:
         default:
       }
-      switch (longitudeCase_) {
+      switch (longitudeNullableCase_) {
         case 5:
           hash = (37 * hash) + LONGITUDE_IS_NULL_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -3315,10 +3315,10 @@ public final class Entity {
         } else {
           stateCasesPerDateBuilder_.clear();
         }
-        latitudeCase_ = 0;
-        latitude_ = null;
-        longitudeCase_ = 0;
-        longitude_ = null;
+        latitudeNullableCase_ = 0;
+        latitudeNullable_ = null;
+        longitudeNullableCase_ = 0;
+        longitudeNullable_ = null;
         return this;
       }
 
@@ -3348,17 +3348,17 @@ public final class Entity {
         int from_bitField0_ = bitField0_;
         result.id_ = id_;
         result.stateName_ = stateName_;
-        if (latitudeCase_ == 3) {
-          result.latitude_ = latitude_;
+        if (latitudeNullableCase_ == 3) {
+          result.latitudeNullable_ = latitudeNullable_;
         }
-        if (latitudeCase_ == 4) {
-          result.latitude_ = latitude_;
+        if (latitudeNullableCase_ == 4) {
+          result.latitudeNullable_ = latitudeNullable_;
         }
-        if (longitudeCase_ == 5) {
-          result.longitude_ = longitude_;
+        if (longitudeNullableCase_ == 5) {
+          result.longitudeNullable_ = longitudeNullable_;
         }
-        if (longitudeCase_ == 6) {
-          result.longitude_ = longitude_;
+        if (longitudeNullableCase_ == 6) {
+          result.longitudeNullable_ = longitudeNullable_;
         }
         if (stateCasesPerDateBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -3369,8 +3369,8 @@ public final class Entity {
         } else {
           result.stateCasesPerDate_ = stateCasesPerDateBuilder_.build();
         }
-        result.latitudeCase_ = latitudeCase_;
-        result.longitudeCase_ = longitudeCase_;
+        result.latitudeNullableCase_ = latitudeNullableCase_;
+        result.longitudeNullableCase_ = longitudeNullableCase_;
         onBuilt();
         return result;
       }
@@ -3452,7 +3452,7 @@ public final class Entity {
             }
           }
         }
-        switch (other.getLatitudeCase()) {
+        switch (other.getLatitudeNullableCase()) {
           case LATITUDE_IS_NULL: {
             setLatitudeIsNull(other.getLatitudeIsNull());
             break;
@@ -3461,11 +3461,11 @@ public final class Entity {
             setLatitude(other.getLatitude());
             break;
           }
-          case LATITUDE_NOT_SET: {
+          case LATITUDENULLABLE_NOT_SET: {
             break;
           }
         }
-        switch (other.getLongitudeCase()) {
+        switch (other.getLongitudeNullableCase()) {
           case LONGITUDE_IS_NULL: {
             setLongitudeIsNull(other.getLongitudeIsNull());
             break;
@@ -3474,7 +3474,7 @@ public final class Entity {
             setLongitude(other.getLongitude());
             break;
           }
-          case LONGITUDE_NOT_SET: {
+          case LONGITUDENULLABLE_NOT_SET: {
             break;
           }
         }
@@ -3506,32 +3506,32 @@ public final class Entity {
         }
         return this;
       }
-      private int latitudeCase_ = 0;
-      private java.lang.Object latitude_;
-      public LatitudeCase
-          getLatitudeCase() {
-        return LatitudeCase.forNumber(
-            latitudeCase_);
+      private int latitudeNullableCase_ = 0;
+      private java.lang.Object latitudeNullable_;
+      public LatitudeNullableCase
+          getLatitudeNullableCase() {
+        return LatitudeNullableCase.forNumber(
+            latitudeNullableCase_);
       }
 
-      public Builder clearLatitude() {
-        latitudeCase_ = 0;
-        latitude_ = null;
+      public Builder clearLatitudeNullable() {
+        latitudeNullableCase_ = 0;
+        latitudeNullable_ = null;
         onChanged();
         return this;
       }
 
-      private int longitudeCase_ = 0;
-      private java.lang.Object longitude_;
-      public LongitudeCase
-          getLongitudeCase() {
-        return LongitudeCase.forNumber(
-            longitudeCase_);
+      private int longitudeNullableCase_ = 0;
+      private java.lang.Object longitudeNullable_;
+      public LongitudeNullableCase
+          getLongitudeNullableCase() {
+        return LongitudeNullableCase.forNumber(
+            longitudeNullableCase_);
       }
 
-      public Builder clearLongitude() {
-        longitudeCase_ = 0;
-        longitude_ = null;
+      public Builder clearLongitudeNullable() {
+        longitudeNullableCase_ = 0;
+        longitudeNullable_ = null;
         onChanged();
         return this;
       }
@@ -3637,8 +3637,8 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public boolean getLatitudeIsNull() {
-        if (latitudeCase_ == 3) {
-          return (java.lang.Boolean) latitude_;
+        if (latitudeNullableCase_ == 3) {
+          return (java.lang.Boolean) latitudeNullable_;
         }
         return false;
       }
@@ -3646,8 +3646,8 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public Builder setLatitudeIsNull(boolean value) {
-        latitudeCase_ = 3;
-        latitude_ = value;
+        latitudeNullableCase_ = 3;
+        latitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -3655,9 +3655,9 @@ public final class Entity {
        * <code>bool latitude_is_null = 3;</code>
        */
       public Builder clearLatitudeIsNull() {
-        if (latitudeCase_ == 3) {
-          latitudeCase_ = 0;
-          latitude_ = null;
+        if (latitudeNullableCase_ == 3) {
+          latitudeNullableCase_ = 0;
+          latitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -3667,8 +3667,8 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public double getLatitude() {
-        if (latitudeCase_ == 4) {
-          return (java.lang.Double) latitude_;
+        if (latitudeNullableCase_ == 4) {
+          return (java.lang.Double) latitudeNullable_;
         }
         return 0D;
       }
@@ -3676,8 +3676,8 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public Builder setLatitude(double value) {
-        latitudeCase_ = 4;
-        latitude_ = value;
+        latitudeNullableCase_ = 4;
+        latitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -3685,9 +3685,9 @@ public final class Entity {
        * <code>double latitude = 4;</code>
        */
       public Builder clearLatitude() {
-        if (latitudeCase_ == 4) {
-          latitudeCase_ = 0;
-          latitude_ = null;
+        if (latitudeNullableCase_ == 4) {
+          latitudeNullableCase_ = 0;
+          latitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -3697,8 +3697,8 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public boolean getLongitudeIsNull() {
-        if (longitudeCase_ == 5) {
-          return (java.lang.Boolean) longitude_;
+        if (longitudeNullableCase_ == 5) {
+          return (java.lang.Boolean) longitudeNullable_;
         }
         return false;
       }
@@ -3706,8 +3706,8 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public Builder setLongitudeIsNull(boolean value) {
-        longitudeCase_ = 5;
-        longitude_ = value;
+        longitudeNullableCase_ = 5;
+        longitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -3715,9 +3715,9 @@ public final class Entity {
        * <code>bool longitude_is_null = 5;</code>
        */
       public Builder clearLongitudeIsNull() {
-        if (longitudeCase_ == 5) {
-          longitudeCase_ = 0;
-          longitude_ = null;
+        if (longitudeNullableCase_ == 5) {
+          longitudeNullableCase_ = 0;
+          longitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -3727,8 +3727,8 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public double getLongitude() {
-        if (longitudeCase_ == 6) {
-          return (java.lang.Double) longitude_;
+        if (longitudeNullableCase_ == 6) {
+          return (java.lang.Double) longitudeNullable_;
         }
         return 0D;
       }
@@ -3736,8 +3736,8 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public Builder setLongitude(double value) {
-        longitudeCase_ = 6;
-        longitude_ = value;
+        longitudeNullableCase_ = 6;
+        longitudeNullable_ = value;
         onChanged();
         return this;
       }
@@ -3745,9 +3745,9 @@ public final class Entity {
        * <code>double longitude = 6;</code>
        */
       public Builder clearLongitude() {
-        if (longitudeCase_ == 6) {
-          longitudeCase_ = 0;
-          longitude_ = null;
+        if (longitudeNullableCase_ == 6) {
+          longitudeNullableCase_ = 0;
+          longitudeNullable_ = null;
           onChanged();
         }
         return this;
@@ -5440,24 +5440,25 @@ public final class Entity {
   static {
     java.lang.String[] descriptorData = {
       "\n\014entity.proto\022\010entities\",\n\004Data\022$\n\tcoun" +
-      "tries\030\001 \003(\0132\021.entities.Country\"\210\002\n\007Count" +
+      "tries\030\001 \003(\0132\021.entities.Country\"\230\002\n\007Count" +
       "ry\022\n\n\002id\030\001 \001(\003\022\024\n\014country_name\030\002 \001(\t\022\032\n\020" +
       "latitude_is_null\030\003 \001(\010H\000\022\022\n\010latitude\030\004 \001" +
       "(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\023\n\tlon" +
       "gitude\030\006 \001(\001H\001\022\037\n\006states\030\007 \003(\0132\017.entitie" +
       "s.State\022=\n\026country_cases_per_date\030\010 \003(\0132" +
-      "\035.entities.CountryCasesPerDateB\013\n\tlatitu" +
-      "de_B\014\n\nlongitude_\"\337\001\n\005State\022\n\n\002id\030\001 \001(\003\022" +
-      "\022\n\nstate_name\030\002 \001(\t\022\032\n\020latitude_is_null\030" +
-      "\003 \001(\010H\000\022\022\n\010latitude\030\004 \001(\001H\000\022\033\n\021longitude" +
-      "_is_null\030\005 \001(\010H\001\022\023\n\tlongitude\030\006 \001(\001H\001\0229\n" +
-      "\024state_cases_per_date\030\007 \003(\0132\033.entities.S" +
-      "tateCasesPerDateB\013\n\tlatitude_B\014\n\nlongitu" +
-      "de_\"H\n\023CountryCasesPerDate\022\n\n\002id\030\001 \001(\003\022\014" +
-      "\n\004date\030\002 \001(\t\022\027\n\017number_of_cases\030\003 \001(\005\"F\n" +
-      "\021StateCasesPerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002" +
-      " \001(\t\022\027\n\017number_of_cases\030\003 \001(\005B\035\n\023ct.core" +
-      "api.protobufB\006Entityb\006proto3"
+      "\035.entities.CountryCasesPerDateB\023\n\021latitu" +
+      "de_nullableB\024\n\022longitude_nullable\"\357\001\n\005St" +
+      "ate\022\n\n\002id\030\001 \001(\003\022\022\n\nstate_name\030\002 \001(\t\022\032\n\020l" +
+      "atitude_is_null\030\003 \001(\010H\000\022\022\n\010latitude\030\004 \001(" +
+      "\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\023\n\tlong" +
+      "itude\030\006 \001(\001H\001\0229\n\024state_cases_per_date\030\007 " +
+      "\003(\0132\033.entities.StateCasesPerDateB\023\n\021lati" +
+      "tude_nullableB\024\n\022longitude_nullable\"H\n\023C" +
+      "ountryCasesPerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002" +
+      " \001(\t\022\027\n\017number_of_cases\030\003 \001(\005\"F\n\021StateCa" +
+      "sesPerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017" +
+      "number_of_cases\030\003 \001(\005B\035\n\023ct.coreapi.prot" +
+      "obufB\006Entityb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5474,13 +5475,13 @@ public final class Entity {
     internal_static_entities_Country_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_Country_descriptor,
-        new java.lang.String[] { "Id", "CountryName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "States", "CountryCasesPerDate", "Latitude", "Longitude", });
+        new java.lang.String[] { "Id", "CountryName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "States", "CountryCasesPerDate", "LatitudeNullable", "LongitudeNullable", });
     internal_static_entities_State_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_entities_State_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_State_descriptor,
-        new java.lang.String[] { "Id", "StateName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "StateCasesPerDate", "Latitude", "Longitude", });
+        new java.lang.String[] { "Id", "StateName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "StateCasesPerDate", "LatitudeNullable", "LongitudeNullable", });
     internal_static_entities_CountryCasesPerDate_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_entities_CountryCasesPerDate_fieldAccessorTable = new
