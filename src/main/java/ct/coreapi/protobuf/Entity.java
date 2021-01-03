@@ -19,27 +19,27 @@ public final class Entity {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
     java.util.List<ct.coreapi.protobuf.Entity.Country> 
-        getCountryList();
+        getCountriesList();
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    ct.coreapi.protobuf.Entity.Country getCountry(int index);
+    ct.coreapi.protobuf.Entity.Country getCountries(int index);
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    int getCountryCount();
+    int getCountriesCount();
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
     java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
-        getCountryOrBuilderList();
+        getCountriesOrBuilderList();
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+    ct.coreapi.protobuf.Entity.CountryOrBuilder getCountriesOrBuilder(
         int index);
   }
   /**
@@ -55,7 +55,7 @@ public final class Entity {
       super(builder);
     }
     private Data() {
-      country_ = java.util.Collections.emptyList();
+      countries_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -91,10 +91,10 @@ public final class Entity {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                country_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>();
+                countries_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              country_.add(
+              countries_.add(
                   input.readMessage(ct.coreapi.protobuf.Entity.Country.parser(), extensionRegistry));
               break;
             }
@@ -114,7 +114,7 @@ public final class Entity {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          country_ = java.util.Collections.unmodifiableList(country_);
+          countries_ = java.util.Collections.unmodifiableList(countries_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -133,39 +133,39 @@ public final class Entity {
               ct.coreapi.protobuf.Entity.Data.class, ct.coreapi.protobuf.Entity.Data.Builder.class);
     }
 
-    public static final int COUNTRY_FIELD_NUMBER = 1;
-    private java.util.List<ct.coreapi.protobuf.Entity.Country> country_;
+    public static final int COUNTRIES_FIELD_NUMBER = 1;
+    private java.util.List<ct.coreapi.protobuf.Entity.Country> countries_;
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountryList() {
-      return country_;
+    public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountriesList() {
+      return countries_;
     }
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
     public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
-        getCountryOrBuilderList() {
-      return country_;
+        getCountriesOrBuilderList() {
+      return countries_;
     }
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    public int getCountryCount() {
-      return country_.size();
+    public int getCountriesCount() {
+      return countries_.size();
     }
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    public ct.coreapi.protobuf.Entity.Country getCountry(int index) {
-      return country_.get(index);
+    public ct.coreapi.protobuf.Entity.Country getCountries(int index) {
+      return countries_.get(index);
     }
     /**
-     * <code>repeated .entities.Country country = 1;</code>
+     * <code>repeated .entities.Country countries = 1;</code>
      */
-    public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+    public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountriesOrBuilder(
         int index) {
-      return country_.get(index);
+      return countries_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,8 +182,8 @@ public final class Entity {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < country_.size(); i++) {
-        output.writeMessage(1, country_.get(i));
+      for (int i = 0; i < countries_.size(); i++) {
+        output.writeMessage(1, countries_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -194,9 +194,9 @@ public final class Entity {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < country_.size(); i++) {
+      for (int i = 0; i < countries_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, country_.get(i));
+          .computeMessageSize(1, countries_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -213,8 +213,8 @@ public final class Entity {
       }
       ct.coreapi.protobuf.Entity.Data other = (ct.coreapi.protobuf.Entity.Data) obj;
 
-      if (!getCountryList()
-          .equals(other.getCountryList())) return false;
+      if (!getCountriesList()
+          .equals(other.getCountriesList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -226,9 +226,9 @@ public final class Entity {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCountryCount() > 0) {
-        hash = (37 * hash) + COUNTRY_FIELD_NUMBER;
-        hash = (53 * hash) + getCountryList().hashCode();
+      if (getCountriesCount() > 0) {
+        hash = (37 * hash) + COUNTRIES_FIELD_NUMBER;
+        hash = (53 * hash) + getCountriesList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -358,17 +358,17 @@ public final class Entity {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCountryFieldBuilder();
+          getCountriesFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (countryBuilder_ == null) {
-          country_ = java.util.Collections.emptyList();
+        if (countriesBuilder_ == null) {
+          countries_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          countryBuilder_.clear();
+          countriesBuilder_.clear();
         }
         return this;
       }
@@ -397,14 +397,14 @@ public final class Entity {
       public ct.coreapi.protobuf.Entity.Data buildPartial() {
         ct.coreapi.protobuf.Entity.Data result = new ct.coreapi.protobuf.Entity.Data(this);
         int from_bitField0_ = bitField0_;
-        if (countryBuilder_ == null) {
+        if (countriesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            country_ = java.util.Collections.unmodifiableList(country_);
+            countries_ = java.util.Collections.unmodifiableList(countries_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.country_ = country_;
+          result.countries_ = countries_;
         } else {
-          result.country_ = countryBuilder_.build();
+          result.countries_ = countriesBuilder_.build();
         }
         onBuilt();
         return result;
@@ -454,29 +454,29 @@ public final class Entity {
 
       public Builder mergeFrom(ct.coreapi.protobuf.Entity.Data other) {
         if (other == ct.coreapi.protobuf.Entity.Data.getDefaultInstance()) return this;
-        if (countryBuilder_ == null) {
-          if (!other.country_.isEmpty()) {
-            if (country_.isEmpty()) {
-              country_ = other.country_;
+        if (countriesBuilder_ == null) {
+          if (!other.countries_.isEmpty()) {
+            if (countries_.isEmpty()) {
+              countries_ = other.countries_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCountryIsMutable();
-              country_.addAll(other.country_);
+              ensureCountriesIsMutable();
+              countries_.addAll(other.countries_);
             }
             onChanged();
           }
         } else {
-          if (!other.country_.isEmpty()) {
-            if (countryBuilder_.isEmpty()) {
-              countryBuilder_.dispose();
-              countryBuilder_ = null;
-              country_ = other.country_;
+          if (!other.countries_.isEmpty()) {
+            if (countriesBuilder_.isEmpty()) {
+              countriesBuilder_.dispose();
+              countriesBuilder_ = null;
+              countries_ = other.countries_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              countryBuilder_ = 
+              countriesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCountryFieldBuilder() : null;
+                   getCountriesFieldBuilder() : null;
             } else {
-              countryBuilder_.addAllMessages(other.country_);
+              countriesBuilder_.addAllMessages(other.countries_);
             }
           }
         }
@@ -510,244 +510,244 @@ public final class Entity {
       }
       private int bitField0_;
 
-      private java.util.List<ct.coreapi.protobuf.Entity.Country> country_ =
+      private java.util.List<ct.coreapi.protobuf.Entity.Country> countries_ =
         java.util.Collections.emptyList();
-      private void ensureCountryIsMutable() {
+      private void ensureCountriesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          country_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>(country_);
+          countries_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.Country>(countries_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> countryBuilder_;
+          ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> countriesBuilder_;
 
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountryList() {
-        if (countryBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(country_);
+      public java.util.List<ct.coreapi.protobuf.Entity.Country> getCountriesList() {
+        if (countriesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(countries_);
         } else {
-          return countryBuilder_.getMessageList();
+          return countriesBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public int getCountryCount() {
-        if (countryBuilder_ == null) {
-          return country_.size();
+      public int getCountriesCount() {
+        if (countriesBuilder_ == null) {
+          return countries_.size();
         } else {
-          return countryBuilder_.getCount();
+          return countriesBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public ct.coreapi.protobuf.Entity.Country getCountry(int index) {
-        if (countryBuilder_ == null) {
-          return country_.get(index);
+      public ct.coreapi.protobuf.Entity.Country getCountries(int index) {
+        if (countriesBuilder_ == null) {
+          return countries_.get(index);
         } else {
-          return countryBuilder_.getMessage(index);
+          return countriesBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder setCountry(
+      public Builder setCountries(
           int index, ct.coreapi.protobuf.Entity.Country value) {
-        if (countryBuilder_ == null) {
+        if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCountryIsMutable();
-          country_.set(index, value);
+          ensureCountriesIsMutable();
+          countries_.set(index, value);
           onChanged();
         } else {
-          countryBuilder_.setMessage(index, value);
+          countriesBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder setCountry(
+      public Builder setCountries(
           int index, ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
-        if (countryBuilder_ == null) {
-          ensureCountryIsMutable();
-          country_.set(index, builderForValue.build());
+        if (countriesBuilder_ == null) {
+          ensureCountriesIsMutable();
+          countries_.set(index, builderForValue.build());
           onChanged();
         } else {
-          countryBuilder_.setMessage(index, builderForValue.build());
+          countriesBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder addCountry(ct.coreapi.protobuf.Entity.Country value) {
-        if (countryBuilder_ == null) {
+      public Builder addCountries(ct.coreapi.protobuf.Entity.Country value) {
+        if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCountryIsMutable();
-          country_.add(value);
+          ensureCountriesIsMutable();
+          countries_.add(value);
           onChanged();
         } else {
-          countryBuilder_.addMessage(value);
+          countriesBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder addCountry(
+      public Builder addCountries(
           int index, ct.coreapi.protobuf.Entity.Country value) {
-        if (countryBuilder_ == null) {
+        if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCountryIsMutable();
-          country_.add(index, value);
+          ensureCountriesIsMutable();
+          countries_.add(index, value);
           onChanged();
         } else {
-          countryBuilder_.addMessage(index, value);
+          countriesBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder addCountry(
+      public Builder addCountries(
           ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
-        if (countryBuilder_ == null) {
-          ensureCountryIsMutable();
-          country_.add(builderForValue.build());
+        if (countriesBuilder_ == null) {
+          ensureCountriesIsMutable();
+          countries_.add(builderForValue.build());
           onChanged();
         } else {
-          countryBuilder_.addMessage(builderForValue.build());
+          countriesBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder addCountry(
+      public Builder addCountries(
           int index, ct.coreapi.protobuf.Entity.Country.Builder builderForValue) {
-        if (countryBuilder_ == null) {
-          ensureCountryIsMutable();
-          country_.add(index, builderForValue.build());
+        if (countriesBuilder_ == null) {
+          ensureCountriesIsMutable();
+          countries_.add(index, builderForValue.build());
           onChanged();
         } else {
-          countryBuilder_.addMessage(index, builderForValue.build());
+          countriesBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder addAllCountry(
+      public Builder addAllCountries(
           java.lang.Iterable<? extends ct.coreapi.protobuf.Entity.Country> values) {
-        if (countryBuilder_ == null) {
-          ensureCountryIsMutable();
+        if (countriesBuilder_ == null) {
+          ensureCountriesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, country_);
+              values, countries_);
           onChanged();
         } else {
-          countryBuilder_.addAllMessages(values);
+          countriesBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder clearCountry() {
-        if (countryBuilder_ == null) {
-          country_ = java.util.Collections.emptyList();
+      public Builder clearCountries() {
+        if (countriesBuilder_ == null) {
+          countries_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          countryBuilder_.clear();
+          countriesBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public Builder removeCountry(int index) {
-        if (countryBuilder_ == null) {
-          ensureCountryIsMutable();
-          country_.remove(index);
+      public Builder removeCountries(int index) {
+        if (countriesBuilder_ == null) {
+          ensureCountriesIsMutable();
+          countries_.remove(index);
           onChanged();
         } else {
-          countryBuilder_.remove(index);
+          countriesBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public ct.coreapi.protobuf.Entity.Country.Builder getCountryBuilder(
+      public ct.coreapi.protobuf.Entity.Country.Builder getCountriesBuilder(
           int index) {
-        return getCountryFieldBuilder().getBuilder(index);
+        return getCountriesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountryOrBuilder(
+      public ct.coreapi.protobuf.Entity.CountryOrBuilder getCountriesOrBuilder(
           int index) {
-        if (countryBuilder_ == null) {
-          return country_.get(index);  } else {
-          return countryBuilder_.getMessageOrBuilder(index);
+        if (countriesBuilder_ == null) {
+          return countries_.get(index);  } else {
+          return countriesBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
       public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryOrBuilder> 
-           getCountryOrBuilderList() {
-        if (countryBuilder_ != null) {
-          return countryBuilder_.getMessageOrBuilderList();
+           getCountriesOrBuilderList() {
+        if (countriesBuilder_ != null) {
+          return countriesBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(country_);
+          return java.util.Collections.unmodifiableList(countries_);
         }
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public ct.coreapi.protobuf.Entity.Country.Builder addCountryBuilder() {
-        return getCountryFieldBuilder().addBuilder(
+      public ct.coreapi.protobuf.Entity.Country.Builder addCountriesBuilder() {
+        return getCountriesFieldBuilder().addBuilder(
             ct.coreapi.protobuf.Entity.Country.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
-      public ct.coreapi.protobuf.Entity.Country.Builder addCountryBuilder(
+      public ct.coreapi.protobuf.Entity.Country.Builder addCountriesBuilder(
           int index) {
-        return getCountryFieldBuilder().addBuilder(
+        return getCountriesFieldBuilder().addBuilder(
             index, ct.coreapi.protobuf.Entity.Country.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.Country country = 1;</code>
+       * <code>repeated .entities.Country countries = 1;</code>
        */
       public java.util.List<ct.coreapi.protobuf.Entity.Country.Builder> 
-           getCountryBuilderList() {
-        return getCountryFieldBuilder().getBuilderList();
+           getCountriesBuilderList() {
+        return getCountriesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder> 
-          getCountryFieldBuilder() {
-        if (countryBuilder_ == null) {
-          countryBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getCountriesFieldBuilder() {
+        if (countriesBuilder_ == null) {
+          countriesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               ct.coreapi.protobuf.Entity.Country, ct.coreapi.protobuf.Entity.Country.Builder, ct.coreapi.protobuf.Entity.CountryOrBuilder>(
-                  country_,
+                  countries_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          country_ = null;
+          countries_ = null;
         }
-        return countryBuilder_;
+        return countriesBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -842,25 +842,49 @@ public final class Entity {
     double getLongitudeValue();
 
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    java.util.List<ct.coreapi.protobuf.Entity.State> 
+        getStatesList();
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    ct.coreapi.protobuf.Entity.State getStates(int index);
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    int getStatesCount();
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    java.util.List<? extends ct.coreapi.protobuf.Entity.StateOrBuilder> 
+        getStatesOrBuilderList();
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    ct.coreapi.protobuf.Entity.StateOrBuilder getStatesOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate> 
         getCountryCasesPerDateList();
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     ct.coreapi.protobuf.Entity.CountryCasesPerDate getCountryCasesPerDate(int index);
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     int getCountryCasesPerDateCount();
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     java.util.List<? extends ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder> 
         getCountryCasesPerDateOrBuilderList();
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder getCountryCasesPerDateOrBuilder(
         int index);
@@ -883,6 +907,7 @@ public final class Entity {
     }
     private Country() {
       countryName_ = "";
+      states_ = java.util.Collections.emptyList();
       countryCasesPerDate_ = java.util.Collections.emptyList();
     }
 
@@ -950,8 +975,17 @@ public final class Entity {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                countryCasesPerDate_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.CountryCasesPerDate>();
+                states_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.State>();
                 mutable_bitField0_ |= 0x00000001;
+              }
+              states_.add(
+                  input.readMessage(ct.coreapi.protobuf.Entity.State.parser(), extensionRegistry));
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                countryCasesPerDate_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.CountryCasesPerDate>();
+                mutable_bitField0_ |= 0x00000002;
               }
               countryCasesPerDate_.add(
                   input.readMessage(ct.coreapi.protobuf.Entity.CountryCasesPerDate.parser(), extensionRegistry));
@@ -973,6 +1007,9 @@ public final class Entity {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          states_ = java.util.Collections.unmodifiableList(states_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           countryCasesPerDate_ = java.util.Collections.unmodifiableList(countryCasesPerDate_);
         }
         this.unknownFields = unknownFields.build();
@@ -1155,35 +1192,70 @@ public final class Entity {
       return 0D;
     }
 
-    public static final int COUNTRY_CASES_PER_DATE_FIELD_NUMBER = 7;
+    public static final int STATES_FIELD_NUMBER = 7;
+    private java.util.List<ct.coreapi.protobuf.Entity.State> states_;
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    public java.util.List<ct.coreapi.protobuf.Entity.State> getStatesList() {
+      return states_;
+    }
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    public java.util.List<? extends ct.coreapi.protobuf.Entity.StateOrBuilder> 
+        getStatesOrBuilderList() {
+      return states_;
+    }
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    public int getStatesCount() {
+      return states_.size();
+    }
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    public ct.coreapi.protobuf.Entity.State getStates(int index) {
+      return states_.get(index);
+    }
+    /**
+     * <code>repeated .entities.State states = 7;</code>
+     */
+    public ct.coreapi.protobuf.Entity.StateOrBuilder getStatesOrBuilder(
+        int index) {
+      return states_.get(index);
+    }
+
+    public static final int COUNTRY_CASES_PER_DATE_FIELD_NUMBER = 8;
     private java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate> countryCasesPerDate_;
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     public java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate> getCountryCasesPerDateList() {
       return countryCasesPerDate_;
     }
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder> 
         getCountryCasesPerDateOrBuilderList() {
       return countryCasesPerDate_;
     }
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     public int getCountryCasesPerDateCount() {
       return countryCasesPerDate_.size();
     }
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     public ct.coreapi.protobuf.Entity.CountryCasesPerDate getCountryCasesPerDate(int index) {
       return countryCasesPerDate_.get(index);
     }
     /**
-     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+     * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
      */
     public ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder getCountryCasesPerDateOrBuilder(
         int index) {
@@ -1226,8 +1298,11 @@ public final class Entity {
         output.writeDouble(
             6, (double)((java.lang.Double) longitude_));
       }
+      for (int i = 0; i < states_.size(); i++) {
+        output.writeMessage(7, states_.get(i));
+      }
       for (int i = 0; i < countryCasesPerDate_.size(); i++) {
-        output.writeMessage(7, countryCasesPerDate_.get(i));
+        output.writeMessage(8, countryCasesPerDate_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1265,9 +1340,13 @@ public final class Entity {
           .computeDoubleSize(
               6, (double)((java.lang.Double) longitude_));
       }
+      for (int i = 0; i < states_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, states_.get(i));
+      }
       for (int i = 0; i < countryCasesPerDate_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, countryCasesPerDate_.get(i));
+          .computeMessageSize(8, countryCasesPerDate_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1288,6 +1367,8 @@ public final class Entity {
           != other.getId()) return false;
       if (!getCountryName()
           .equals(other.getCountryName())) return false;
+      if (!getStatesList()
+          .equals(other.getStatesList())) return false;
       if (!getCountryCasesPerDateList()
           .equals(other.getCountryCasesPerDateList())) return false;
       if (!getLatitudeCase().equals(other.getLatitudeCase())) return false;
@@ -1334,6 +1415,10 @@ public final class Entity {
           getId());
       hash = (37 * hash) + COUNTRY_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getCountryName().hashCode();
+      if (getStatesCount() > 0) {
+        hash = (37 * hash) + STATES_FIELD_NUMBER;
+        hash = (53 * hash) + getStatesList().hashCode();
+      }
       if (getCountryCasesPerDateCount() > 0) {
         hash = (37 * hash) + COUNTRY_CASES_PER_DATE_FIELD_NUMBER;
         hash = (53 * hash) + getCountryCasesPerDateList().hashCode();
@@ -1494,6 +1579,7 @@ public final class Entity {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getStatesFieldBuilder();
           getCountryCasesPerDateFieldBuilder();
         }
       }
@@ -1504,9 +1590,15 @@ public final class Entity {
 
         countryName_ = "";
 
+        if (statesBuilder_ == null) {
+          states_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          statesBuilder_.clear();
+        }
         if (countryCasesPerDateBuilder_ == null) {
           countryCasesPerDate_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           countryCasesPerDateBuilder_.clear();
         }
@@ -1555,10 +1647,19 @@ public final class Entity {
         if (longitudeCase_ == 6) {
           result.longitude_ = longitude_;
         }
-        if (countryCasesPerDateBuilder_ == null) {
+        if (statesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            countryCasesPerDate_ = java.util.Collections.unmodifiableList(countryCasesPerDate_);
+            states_ = java.util.Collections.unmodifiableList(states_);
             bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.states_ = states_;
+        } else {
+          result.states_ = statesBuilder_.build();
+        }
+        if (countryCasesPerDateBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            countryCasesPerDate_ = java.util.Collections.unmodifiableList(countryCasesPerDate_);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.countryCasesPerDate_ = countryCasesPerDate_;
         } else {
@@ -1621,11 +1722,37 @@ public final class Entity {
           countryName_ = other.countryName_;
           onChanged();
         }
+        if (statesBuilder_ == null) {
+          if (!other.states_.isEmpty()) {
+            if (states_.isEmpty()) {
+              states_ = other.states_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureStatesIsMutable();
+              states_.addAll(other.states_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.states_.isEmpty()) {
+            if (statesBuilder_.isEmpty()) {
+              statesBuilder_.dispose();
+              statesBuilder_ = null;
+              states_ = other.states_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              statesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getStatesFieldBuilder() : null;
+            } else {
+              statesBuilder_.addAllMessages(other.states_);
+            }
+          }
+        }
         if (countryCasesPerDateBuilder_ == null) {
           if (!other.countryCasesPerDate_.isEmpty()) {
             if (countryCasesPerDate_.isEmpty()) {
               countryCasesPerDate_ = other.countryCasesPerDate_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureCountryCasesPerDateIsMutable();
               countryCasesPerDate_.addAll(other.countryCasesPerDate_);
@@ -1638,7 +1765,7 @@ public final class Entity {
               countryCasesPerDateBuilder_.dispose();
               countryCasesPerDateBuilder_ = null;
               countryCasesPerDate_ = other.countryCasesPerDate_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               countryCasesPerDateBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCountryCasesPerDateFieldBuilder() : null;
@@ -1948,12 +2075,252 @@ public final class Entity {
         return this;
       }
 
+      private java.util.List<ct.coreapi.protobuf.Entity.State> states_ =
+        java.util.Collections.emptyList();
+      private void ensureStatesIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          states_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.State>(states_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder> statesBuilder_;
+
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public java.util.List<ct.coreapi.protobuf.Entity.State> getStatesList() {
+        if (statesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(states_);
+        } else {
+          return statesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public int getStatesCount() {
+        if (statesBuilder_ == null) {
+          return states_.size();
+        } else {
+          return statesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public ct.coreapi.protobuf.Entity.State getStates(int index) {
+        if (statesBuilder_ == null) {
+          return states_.get(index);
+        } else {
+          return statesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder setStates(
+          int index, ct.coreapi.protobuf.Entity.State value) {
+        if (statesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatesIsMutable();
+          states_.set(index, value);
+          onChanged();
+        } else {
+          statesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder setStates(
+          int index, ct.coreapi.protobuf.Entity.State.Builder builderForValue) {
+        if (statesBuilder_ == null) {
+          ensureStatesIsMutable();
+          states_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          statesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder addStates(ct.coreapi.protobuf.Entity.State value) {
+        if (statesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatesIsMutable();
+          states_.add(value);
+          onChanged();
+        } else {
+          statesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder addStates(
+          int index, ct.coreapi.protobuf.Entity.State value) {
+        if (statesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatesIsMutable();
+          states_.add(index, value);
+          onChanged();
+        } else {
+          statesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder addStates(
+          ct.coreapi.protobuf.Entity.State.Builder builderForValue) {
+        if (statesBuilder_ == null) {
+          ensureStatesIsMutable();
+          states_.add(builderForValue.build());
+          onChanged();
+        } else {
+          statesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder addStates(
+          int index, ct.coreapi.protobuf.Entity.State.Builder builderForValue) {
+        if (statesBuilder_ == null) {
+          ensureStatesIsMutable();
+          states_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          statesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder addAllStates(
+          java.lang.Iterable<? extends ct.coreapi.protobuf.Entity.State> values) {
+        if (statesBuilder_ == null) {
+          ensureStatesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, states_);
+          onChanged();
+        } else {
+          statesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder clearStates() {
+        if (statesBuilder_ == null) {
+          states_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          statesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public Builder removeStates(int index) {
+        if (statesBuilder_ == null) {
+          ensureStatesIsMutable();
+          states_.remove(index);
+          onChanged();
+        } else {
+          statesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public ct.coreapi.protobuf.Entity.State.Builder getStatesBuilder(
+          int index) {
+        return getStatesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public ct.coreapi.protobuf.Entity.StateOrBuilder getStatesOrBuilder(
+          int index) {
+        if (statesBuilder_ == null) {
+          return states_.get(index);  } else {
+          return statesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public java.util.List<? extends ct.coreapi.protobuf.Entity.StateOrBuilder> 
+           getStatesOrBuilderList() {
+        if (statesBuilder_ != null) {
+          return statesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(states_);
+        }
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public ct.coreapi.protobuf.Entity.State.Builder addStatesBuilder() {
+        return getStatesFieldBuilder().addBuilder(
+            ct.coreapi.protobuf.Entity.State.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public ct.coreapi.protobuf.Entity.State.Builder addStatesBuilder(
+          int index) {
+        return getStatesFieldBuilder().addBuilder(
+            index, ct.coreapi.protobuf.Entity.State.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .entities.State states = 7;</code>
+       */
+      public java.util.List<ct.coreapi.protobuf.Entity.State.Builder> 
+           getStatesBuilderList() {
+        return getStatesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder> 
+          getStatesFieldBuilder() {
+        if (statesBuilder_ == null) {
+          statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              ct.coreapi.protobuf.Entity.State, ct.coreapi.protobuf.Entity.State.Builder, ct.coreapi.protobuf.Entity.StateOrBuilder>(
+                  states_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          states_ = null;
+        }
+        return statesBuilder_;
+      }
+
       private java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate> countryCasesPerDate_ =
         java.util.Collections.emptyList();
       private void ensureCountryCasesPerDateIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           countryCasesPerDate_ = new java.util.ArrayList<ct.coreapi.protobuf.Entity.CountryCasesPerDate>(countryCasesPerDate_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1961,7 +2328,7 @@ public final class Entity {
           ct.coreapi.protobuf.Entity.CountryCasesPerDate, ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder, ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder> countryCasesPerDateBuilder_;
 
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate> getCountryCasesPerDateList() {
         if (countryCasesPerDateBuilder_ == null) {
@@ -1971,7 +2338,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public int getCountryCasesPerDateCount() {
         if (countryCasesPerDateBuilder_ == null) {
@@ -1981,7 +2348,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public ct.coreapi.protobuf.Entity.CountryCasesPerDate getCountryCasesPerDate(int index) {
         if (countryCasesPerDateBuilder_ == null) {
@@ -1991,7 +2358,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder setCountryCasesPerDate(
           int index, ct.coreapi.protobuf.Entity.CountryCasesPerDate value) {
@@ -2008,7 +2375,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder setCountryCasesPerDate(
           int index, ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder builderForValue) {
@@ -2022,7 +2389,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder addCountryCasesPerDate(ct.coreapi.protobuf.Entity.CountryCasesPerDate value) {
         if (countryCasesPerDateBuilder_ == null) {
@@ -2038,7 +2405,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder addCountryCasesPerDate(
           int index, ct.coreapi.protobuf.Entity.CountryCasesPerDate value) {
@@ -2055,7 +2422,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder addCountryCasesPerDate(
           ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder builderForValue) {
@@ -2069,7 +2436,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder addCountryCasesPerDate(
           int index, ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder builderForValue) {
@@ -2083,7 +2450,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder addAllCountryCasesPerDate(
           java.lang.Iterable<? extends ct.coreapi.protobuf.Entity.CountryCasesPerDate> values) {
@@ -2098,12 +2465,12 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder clearCountryCasesPerDate() {
         if (countryCasesPerDateBuilder_ == null) {
           countryCasesPerDate_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           countryCasesPerDateBuilder_.clear();
@@ -2111,7 +2478,7 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public Builder removeCountryCasesPerDate(int index) {
         if (countryCasesPerDateBuilder_ == null) {
@@ -2124,14 +2491,14 @@ public final class Entity {
         return this;
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder getCountryCasesPerDateBuilder(
           int index) {
         return getCountryCasesPerDateFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder getCountryCasesPerDateOrBuilder(
           int index) {
@@ -2141,7 +2508,7 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public java.util.List<? extends ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder> 
            getCountryCasesPerDateOrBuilderList() {
@@ -2152,14 +2519,14 @@ public final class Entity {
         }
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder addCountryCasesPerDateBuilder() {
         return getCountryCasesPerDateFieldBuilder().addBuilder(
             ct.coreapi.protobuf.Entity.CountryCasesPerDate.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder addCountryCasesPerDateBuilder(
           int index) {
@@ -2167,7 +2534,7 @@ public final class Entity {
             index, ct.coreapi.protobuf.Entity.CountryCasesPerDate.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 7;</code>
+       * <code>repeated .entities.CountryCasesPerDate country_cases_per_date = 8;</code>
        */
       public java.util.List<ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder> 
            getCountryCasesPerDateBuilderList() {
@@ -2180,7 +2547,7 @@ public final class Entity {
           countryCasesPerDateBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               ct.coreapi.protobuf.Entity.CountryCasesPerDate, ct.coreapi.protobuf.Entity.CountryCasesPerDate.Builder, ct.coreapi.protobuf.Entity.CountryCasesPerDateOrBuilder>(
                   countryCasesPerDate_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           countryCasesPerDate_ = null;
@@ -5072,25 +5439,26 @@ public final class Entity {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014entity.proto\022\010entities\"*\n\004Data\022\"\n\007coun" +
-      "try\030\001 \003(\0132\021.entities.Country\"\361\001\n\007Country" +
-      "\022\n\n\002id\030\001 \001(\003\022\024\n\014country_name\030\002 \001(\t\022\032\n\020la" +
-      "titude_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value" +
-      "\030\004 \001(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n" +
-      "\017longitude_value\030\006 \001(\001H\001\022=\n\026country_case" +
-      "s_per_date\030\007 \003(\0132\035.entities.CountryCases" +
-      "PerDateB\n\n\010latitudeB\013\n\tlongitude\"\351\001\n\005Sta" +
-      "te\022\n\n\002id\030\001 \001(\003\022\022\n\nstate_name\030\002 \001(\t\022\032\n\020la" +
-      "titude_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value" +
-      "\030\004 \001(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n" +
-      "\017longitude_value\030\006 \001(\001H\001\0229\n\024state_cases_" +
-      "per_date\030\007 \003(\0132\033.entities.StateCasesPerD" +
-      "ateB\n\n\010latitudeB\013\n\tlongitude\"H\n\023CountryC" +
-      "asesPerDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n" +
-      "\017number_of_cases\030\003 \001(\005\"F\n\021StateCasesPerD" +
-      "ate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017number_" +
-      "of_cases\030\003 \001(\005B\035\n\023ct.coreapi.protobufB\006E" +
-      "ntityb\006proto3"
+      "\n\014entity.proto\022\010entities\",\n\004Data\022$\n\tcoun" +
+      "tries\030\001 \003(\0132\021.entities.Country\"\222\002\n\007Count" +
+      "ry\022\n\n\002id\030\001 \001(\003\022\024\n\014country_name\030\002 \001(\t\022\032\n\020" +
+      "latitude_is_null\030\003 \001(\010H\000\022\030\n\016latitude_val" +
+      "ue\030\004 \001(\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022" +
+      "\031\n\017longitude_value\030\006 \001(\001H\001\022\037\n\006states\030\007 \003" +
+      "(\0132\017.entities.State\022=\n\026country_cases_per" +
+      "_date\030\010 \003(\0132\035.entities.CountryCasesPerDa" +
+      "teB\n\n\010latitudeB\013\n\tlongitude\"\351\001\n\005State\022\n\n" +
+      "\002id\030\001 \001(\003\022\022\n\nstate_name\030\002 \001(\t\022\032\n\020latitud" +
+      "e_is_null\030\003 \001(\010H\000\022\030\n\016latitude_value\030\004 \001(" +
+      "\001H\000\022\033\n\021longitude_is_null\030\005 \001(\010H\001\022\031\n\017long" +
+      "itude_value\030\006 \001(\001H\001\0229\n\024state_cases_per_d" +
+      "ate\030\007 \003(\0132\033.entities.StateCasesPerDateB\n" +
+      "\n\010latitudeB\013\n\tlongitude\"H\n\023CountryCasesP" +
+      "erDate\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017numb" +
+      "er_of_cases\030\003 \001(\005\"F\n\021StateCasesPerDate\022\n" +
+      "\n\002id\030\001 \001(\003\022\014\n\004date\030\002 \001(\t\022\027\n\017number_of_ca" +
+      "ses\030\003 \001(\005B\035\n\023ct.coreapi.protobufB\006Entity" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5101,13 +5469,13 @@ public final class Entity {
     internal_static_entities_Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_Data_descriptor,
-        new java.lang.String[] { "Country", });
+        new java.lang.String[] { "Countries", });
     internal_static_entities_Country_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_entities_Country_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_entities_Country_descriptor,
-        new java.lang.String[] { "Id", "CountryName", "LatitudeIsNull", "LatitudeValue", "LongitudeIsNull", "LongitudeValue", "CountryCasesPerDate", "Latitude", "Longitude", });
+        new java.lang.String[] { "Id", "CountryName", "LatitudeIsNull", "LatitudeValue", "LongitudeIsNull", "LongitudeValue", "States", "CountryCasesPerDate", "Latitude", "Longitude", });
     internal_static_entities_State_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_entities_State_fieldAccessorTable = new

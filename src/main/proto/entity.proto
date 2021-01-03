@@ -4,7 +4,7 @@ option java_package = "ct.coreapi.protobuf";
 option java_outer_classname = "Entity";
 
 message Data {
-  repeated Country country = 1;
+  repeated Country countries = 1;
 }
 
 message Country {
@@ -18,7 +18,8 @@ message Country {
     bool longitude_is_null = 5;
     double longitude_value = 6;
   }
-  repeated CountryCasesPerDate country_cases_per_date = 7;
+  repeated State states = 7;
+  repeated CountryCasesPerDate country_cases_per_date = 8;
 }
 
 message State {
