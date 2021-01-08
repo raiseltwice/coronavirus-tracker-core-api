@@ -1,7 +1,7 @@
 syntax = "proto3";
 package entities;
-option java_package = "ct.coreapi.common";
-option java_outer_classname = "Protos";
+option java_package = "coronavirus.tracker.core.api";
+option java_outer_classname = "CoronavirusTrackerCoreProtos";
 
 message Countries {
   repeated Country countries = 1;
