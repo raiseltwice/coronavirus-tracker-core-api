@@ -3,19 +3,19 @@ package entities;
 option java_package = "coronavirus.tracker.core.api";
 option java_outer_classname = "CoronavirusTrackerCoreProtos";
 
-message Countries {
-  repeated Country countries = 1;
+message CountriesDTO {
+  repeated CountryDTO countries = 1;
 }
 
-message States {
-  repeated State states = 1;
+message StatesDTO {
+  repeated StateDTO states = 1;
 }
 
-message CasesPerDateCollection {
-  repeated CasesPerDate casesPerDateCollection = 1;
+message CasesPerDateCollectionDTO {
+  repeated CasesPerDateDTO casesPerDateCollection = 1;
 }
 
-message Country {
+message CountryDTO {
   string country_name = 1;
   oneof latitude_nullable {
     bool latitude_is_null = 2;
@@ -27,7 +27,7 @@ message Country {
   }
 }
 
-message State {
+message StateDTO {
   string state_name = 1;
   oneof latitude_nullable {
     bool latitude_is_null = 2;
@@ -39,7 +39,7 @@ message State {
   }
 }
 
-message CasesPerDate {
+message CasesPerDateDTO {
   string date = 1;
   int32 number_of_cases = 2;
 }

@@ -14,47 +14,47 @@ public final class CoronavirusTrackerCoreProtos {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface CountriesOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.Countries)
+  public interface CountriesDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.CountriesDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> 
+    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> 
         getCountriesList();
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getCountries(int index);
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getCountries(int index);
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
     int getCountriesCount();
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder> 
+    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder> 
         getCountriesOrBuilderList();
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder getCountriesOrBuilder(
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder getCountriesOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code entities.Countries}
+   * Protobuf type {@code entities.CountriesDTO}
    */
-  public  static final class Countries extends
+  public  static final class CountriesDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.Countries)
-      CountriesOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.CountriesDTO)
+      CountriesDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Countries.newBuilder() to construct.
-    private Countries(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CountriesDTO.newBuilder() to construct.
+    private CountriesDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Countries() {
+    private CountriesDTO() {
       countries_ = java.util.Collections.emptyList();
     }
 
@@ -62,7 +62,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Countries();
+      return new CountriesDTO();
     }
 
     @java.lang.Override
@@ -70,7 +70,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Countries(
+    private CountriesDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -91,11 +91,11 @@ public final class CoronavirusTrackerCoreProtos {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                countries_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country>();
+                countries_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO>();
                 mutable_bitField0_ |= 0x00000001;
               }
               countries_.add(
-                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.parser(), extensionRegistry));
+                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -122,48 +122,48 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Countries_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountriesDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Countries_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountriesDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.Builder.class);
     }
 
     public static final int COUNTRIES_FIELD_NUMBER = 1;
-    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> countries_;
+    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> countries_;
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> getCountriesList() {
+    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> getCountriesList() {
       return countries_;
     }
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder> 
+    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder> 
         getCountriesOrBuilderList() {
       return countries_;
     }
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
     public int getCountriesCount() {
       return countries_.size();
     }
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getCountries(int index) {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getCountries(int index) {
       return countries_.get(index);
     }
     /**
-     * <code>repeated .entities.Country countries = 1;</code>
+     * <code>repeated .entities.CountryDTO countries = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder getCountriesOrBuilder(
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder getCountriesOrBuilder(
         int index) {
       return countries_.get(index);
     }
@@ -208,10 +208,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO) obj;
 
       if (!getCountriesList()
           .equals(other.getCountriesList())) return false;
@@ -235,69 +235,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -310,7 +310,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -326,26 +326,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.Countries}
+     * Protobuf type {@code entities.CountriesDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.Countries)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.CountriesDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Countries_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountriesDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Countries_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountriesDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -376,17 +376,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Countries_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountriesDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -394,8 +394,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO(this);
         int from_bitField0_ = bitField0_;
         if (countriesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -444,16 +444,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO.getDefaultInstance()) return this;
         if (countriesBuilder_ == null) {
           if (!other.countries_.isEmpty()) {
             if (countries_.isEmpty()) {
@@ -495,11 +495,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -510,22 +510,22 @@ public final class CoronavirusTrackerCoreProtos {
       }
       private int bitField0_;
 
-      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> countries_ =
+      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> countries_ =
         java.util.Collections.emptyList();
       private void ensureCountriesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          countries_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country>(countries_);
+          countries_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO>(countries_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder> countriesBuilder_;
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder> countriesBuilder_;
 
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> getCountriesList() {
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> getCountriesList() {
         if (countriesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(countries_);
         } else {
@@ -533,7 +533,7 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public int getCountriesCount() {
         if (countriesBuilder_ == null) {
@@ -543,9 +543,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getCountries(int index) {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getCountries(int index) {
         if (countriesBuilder_ == null) {
           return countries_.get(index);
         } else {
@@ -553,10 +553,10 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder setCountries(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO value) {
         if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -570,10 +570,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder setCountries(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder builderForValue) {
         if (countriesBuilder_ == null) {
           ensureCountriesIsMutable();
           countries_.set(index, builderForValue.build());
@@ -584,9 +584,9 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public Builder addCountries(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country value) {
+      public Builder addCountries(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO value) {
         if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -600,10 +600,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder addCountries(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO value) {
         if (countriesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -617,10 +617,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder addCountries(
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder builderForValue) {
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder builderForValue) {
         if (countriesBuilder_ == null) {
           ensureCountriesIsMutable();
           countries_.add(builderForValue.build());
@@ -631,10 +631,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder addCountries(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder builderForValue) {
         if (countriesBuilder_ == null) {
           ensureCountriesIsMutable();
           countries_.add(index, builderForValue.build());
@@ -645,10 +645,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder addAllCountries(
-          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country> values) {
+          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO> values) {
         if (countriesBuilder_ == null) {
           ensureCountriesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -660,7 +660,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder clearCountries() {
         if (countriesBuilder_ == null) {
@@ -673,7 +673,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
       public Builder removeCountries(int index) {
         if (countriesBuilder_ == null) {
@@ -686,16 +686,16 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder getCountriesBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder getCountriesBuilder(
           int index) {
         return getCountriesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder getCountriesOrBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder getCountriesOrBuilder(
           int index) {
         if (countriesBuilder_ == null) {
           return countries_.get(index);  } else {
@@ -703,9 +703,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder> 
+      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder> 
            getCountriesOrBuilderList() {
         if (countriesBuilder_ != null) {
           return countriesBuilder_.getMessageOrBuilderList();
@@ -714,33 +714,33 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder addCountriesBuilder() {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder addCountriesBuilder() {
         return getCountriesFieldBuilder().addBuilder(
-            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.getDefaultInstance());
+            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder addCountriesBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder addCountriesBuilder(
           int index) {
         return getCountriesFieldBuilder().addBuilder(
-            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.getDefaultInstance());
+            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.Country countries = 1;</code>
+       * <code>repeated .entities.CountryDTO countries = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder> 
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder> 
            getCountriesBuilderList() {
         return getCountriesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder> 
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder> 
           getCountriesFieldBuilder() {
         if (countriesBuilder_ == null) {
           countriesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder>(
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder>(
                   countries_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -762,87 +762,87 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.Countries)
+      // @@protoc_insertion_point(builder_scope:entities.CountriesDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.Countries)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.CountriesDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Countries>
-        PARSER = new com.google.protobuf.AbstractParser<Countries>() {
+    private static final com.google.protobuf.Parser<CountriesDTO>
+        PARSER = new com.google.protobuf.AbstractParser<CountriesDTO>() {
       @java.lang.Override
-      public Countries parsePartialFrom(
+      public CountriesDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Countries(input, extensionRegistry);
+        return new CountriesDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Countries> parser() {
+    public static com.google.protobuf.Parser<CountriesDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Countries> getParserForType() {
+    public com.google.protobuf.Parser<CountriesDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Countries getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountriesDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface StatesOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.States)
+  public interface StatesDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.StatesDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> 
+    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> 
         getStatesList();
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getStates(int index);
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getStates(int index);
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
     int getStatesCount();
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder> 
+    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder> 
         getStatesOrBuilderList();
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder getStatesOrBuilder(
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder getStatesOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code entities.States}
+   * Protobuf type {@code entities.StatesDTO}
    */
-  public  static final class States extends
+  public  static final class StatesDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.States)
-      StatesOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.StatesDTO)
+      StatesDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use States.newBuilder() to construct.
-    private States(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use StatesDTO.newBuilder() to construct.
+    private StatesDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private States() {
+    private StatesDTO() {
       states_ = java.util.Collections.emptyList();
     }
 
@@ -850,7 +850,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new States();
+      return new StatesDTO();
     }
 
     @java.lang.Override
@@ -858,7 +858,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private States(
+    private StatesDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -879,11 +879,11 @@ public final class CoronavirusTrackerCoreProtos {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                states_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State>();
+                states_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO>();
                 mutable_bitField0_ |= 0x00000001;
               }
               states_.add(
-                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.parser(), extensionRegistry));
+                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -910,48 +910,48 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_States_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StatesDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_States_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StatesDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.Builder.class);
     }
 
     public static final int STATES_FIELD_NUMBER = 1;
-    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> states_;
+    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> states_;
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> getStatesList() {
+    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> getStatesList() {
       return states_;
     }
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder> 
+    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder> 
         getStatesOrBuilderList() {
       return states_;
     }
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
     public int getStatesCount() {
       return states_.size();
     }
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getStates(int index) {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getStates(int index) {
       return states_.get(index);
     }
     /**
-     * <code>repeated .entities.State states = 1;</code>
+     * <code>repeated .entities.StateDTO states = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder getStatesOrBuilder(
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder getStatesOrBuilder(
         int index) {
       return states_.get(index);
     }
@@ -996,10 +996,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO) obj;
 
       if (!getStatesList()
           .equals(other.getStatesList())) return false;
@@ -1023,69 +1023,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1098,7 +1098,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1114,26 +1114,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.States}
+     * Protobuf type {@code entities.StatesDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.States)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.StatesDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_States_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StatesDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_States_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StatesDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1164,17 +1164,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_States_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StatesDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1182,8 +1182,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO(this);
         int from_bitField0_ = bitField0_;
         if (statesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -1232,16 +1232,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO.getDefaultInstance()) return this;
         if (statesBuilder_ == null) {
           if (!other.states_.isEmpty()) {
             if (states_.isEmpty()) {
@@ -1283,11 +1283,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1298,22 +1298,22 @@ public final class CoronavirusTrackerCoreProtos {
       }
       private int bitField0_;
 
-      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> states_ =
+      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> states_ =
         java.util.Collections.emptyList();
       private void ensureStatesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          states_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State>(states_);
+          states_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO>(states_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder> statesBuilder_;
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder> statesBuilder_;
 
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> getStatesList() {
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> getStatesList() {
         if (statesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(states_);
         } else {
@@ -1321,7 +1321,7 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public int getStatesCount() {
         if (statesBuilder_ == null) {
@@ -1331,9 +1331,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getStates(int index) {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getStates(int index) {
         if (statesBuilder_ == null) {
           return states_.get(index);
         } else {
@@ -1341,10 +1341,10 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder setStates(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO value) {
         if (statesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1358,10 +1358,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder setStates(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder builderForValue) {
         if (statesBuilder_ == null) {
           ensureStatesIsMutable();
           states_.set(index, builderForValue.build());
@@ -1372,9 +1372,9 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public Builder addStates(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State value) {
+      public Builder addStates(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO value) {
         if (statesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1388,10 +1388,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder addStates(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO value) {
         if (statesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1405,10 +1405,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder addStates(
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder builderForValue) {
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder builderForValue) {
         if (statesBuilder_ == null) {
           ensureStatesIsMutable();
           states_.add(builderForValue.build());
@@ -1419,10 +1419,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder addStates(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder builderForValue) {
         if (statesBuilder_ == null) {
           ensureStatesIsMutable();
           states_.add(index, builderForValue.build());
@@ -1433,10 +1433,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder addAllStates(
-          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State> values) {
+          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO> values) {
         if (statesBuilder_ == null) {
           ensureStatesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1448,7 +1448,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder clearStates() {
         if (statesBuilder_ == null) {
@@ -1461,7 +1461,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
       public Builder removeStates(int index) {
         if (statesBuilder_ == null) {
@@ -1474,16 +1474,16 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder getStatesBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder getStatesBuilder(
           int index) {
         return getStatesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder getStatesOrBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder getStatesOrBuilder(
           int index) {
         if (statesBuilder_ == null) {
           return states_.get(index);  } else {
@@ -1491,9 +1491,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder> 
+      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder> 
            getStatesOrBuilderList() {
         if (statesBuilder_ != null) {
           return statesBuilder_.getMessageOrBuilderList();
@@ -1502,33 +1502,33 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder addStatesBuilder() {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder addStatesBuilder() {
         return getStatesFieldBuilder().addBuilder(
-            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.getDefaultInstance());
+            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder addStatesBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder addStatesBuilder(
           int index) {
         return getStatesFieldBuilder().addBuilder(
-            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.getDefaultInstance());
+            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.State states = 1;</code>
+       * <code>repeated .entities.StateDTO states = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder> 
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder> 
            getStatesBuilderList() {
         return getStatesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder> 
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder> 
           getStatesFieldBuilder() {
         if (statesBuilder_ == null) {
           statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder>(
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder>(
                   states_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1550,87 +1550,87 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.States)
+      // @@protoc_insertion_point(builder_scope:entities.StatesDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.States)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.StatesDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<States>
-        PARSER = new com.google.protobuf.AbstractParser<States>() {
+    private static final com.google.protobuf.Parser<StatesDTO>
+        PARSER = new com.google.protobuf.AbstractParser<StatesDTO>() {
       @java.lang.Override
-      public States parsePartialFrom(
+      public StatesDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new States(input, extensionRegistry);
+        return new StatesDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<States> parser() {
+    public static com.google.protobuf.Parser<StatesDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<States> getParserForType() {
+    public com.google.protobuf.Parser<StatesDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.States getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StatesDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface CasesPerDateCollectionOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.CasesPerDateCollection)
+  public interface CasesPerDateCollectionDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.CasesPerDateCollectionDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> 
+    java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> 
         getCasesPerDateCollectionList();
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getCasesPerDateCollection(int index);
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getCasesPerDateCollection(int index);
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
     int getCasesPerDateCollectionCount();
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder> 
+    java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder> 
         getCasesPerDateCollectionOrBuilderList();
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder getCasesPerDateCollectionOrBuilder(
+    coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder getCasesPerDateCollectionOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code entities.CasesPerDateCollection}
+   * Protobuf type {@code entities.CasesPerDateCollectionDTO}
    */
-  public  static final class CasesPerDateCollection extends
+  public  static final class CasesPerDateCollectionDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.CasesPerDateCollection)
-      CasesPerDateCollectionOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.CasesPerDateCollectionDTO)
+      CasesPerDateCollectionDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use CasesPerDateCollection.newBuilder() to construct.
-    private CasesPerDateCollection(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CasesPerDateCollectionDTO.newBuilder() to construct.
+    private CasesPerDateCollectionDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private CasesPerDateCollection() {
+    private CasesPerDateCollectionDTO() {
       casesPerDateCollection_ = java.util.Collections.emptyList();
     }
 
@@ -1638,7 +1638,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new CasesPerDateCollection();
+      return new CasesPerDateCollectionDTO();
     }
 
     @java.lang.Override
@@ -1646,7 +1646,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private CasesPerDateCollection(
+    private CasesPerDateCollectionDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1667,11 +1667,11 @@ public final class CoronavirusTrackerCoreProtos {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                casesPerDateCollection_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate>();
+                casesPerDateCollection_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO>();
                 mutable_bitField0_ |= 0x00000001;
               }
               casesPerDateCollection_.add(
-                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.parser(), extensionRegistry));
+                  input.readMessage(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -1698,48 +1698,48 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollection_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollectionDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollection_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollectionDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.Builder.class);
     }
 
     public static final int CASESPERDATECOLLECTION_FIELD_NUMBER = 1;
-    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> casesPerDateCollection_;
+    private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> casesPerDateCollection_;
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> getCasesPerDateCollectionList() {
+    public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> getCasesPerDateCollectionList() {
       return casesPerDateCollection_;
     }
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder> 
+    public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder> 
         getCasesPerDateCollectionOrBuilderList() {
       return casesPerDateCollection_;
     }
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
     public int getCasesPerDateCollectionCount() {
       return casesPerDateCollection_.size();
     }
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getCasesPerDateCollection(int index) {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getCasesPerDateCollection(int index) {
       return casesPerDateCollection_.get(index);
     }
     /**
-     * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+     * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
      */
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder getCasesPerDateCollectionOrBuilder(
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder getCasesPerDateCollectionOrBuilder(
         int index) {
       return casesPerDateCollection_.get(index);
     }
@@ -1784,10 +1784,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO) obj;
 
       if (!getCasesPerDateCollectionList()
           .equals(other.getCasesPerDateCollectionList())) return false;
@@ -1811,69 +1811,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1886,7 +1886,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1902,26 +1902,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.CasesPerDateCollection}
+     * Protobuf type {@code entities.CasesPerDateCollectionDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.CasesPerDateCollection)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.CasesPerDateCollectionDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollection_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollectionDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollection_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollectionDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1952,17 +1952,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollection_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateCollectionDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1970,8 +1970,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO(this);
         int from_bitField0_ = bitField0_;
         if (casesPerDateCollectionBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -2020,16 +2020,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO.getDefaultInstance()) return this;
         if (casesPerDateCollectionBuilder_ == null) {
           if (!other.casesPerDateCollection_.isEmpty()) {
             if (casesPerDateCollection_.isEmpty()) {
@@ -2071,11 +2071,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2086,22 +2086,22 @@ public final class CoronavirusTrackerCoreProtos {
       }
       private int bitField0_;
 
-      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> casesPerDateCollection_ =
+      private java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> casesPerDateCollection_ =
         java.util.Collections.emptyList();
       private void ensureCasesPerDateCollectionIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          casesPerDateCollection_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate>(casesPerDateCollection_);
+          casesPerDateCollection_ = new java.util.ArrayList<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO>(casesPerDateCollection_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder> casesPerDateCollectionBuilder_;
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder> casesPerDateCollectionBuilder_;
 
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> getCasesPerDateCollectionList() {
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> getCasesPerDateCollectionList() {
         if (casesPerDateCollectionBuilder_ == null) {
           return java.util.Collections.unmodifiableList(casesPerDateCollection_);
         } else {
@@ -2109,7 +2109,7 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public int getCasesPerDateCollectionCount() {
         if (casesPerDateCollectionBuilder_ == null) {
@@ -2119,9 +2119,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getCasesPerDateCollection(int index) {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getCasesPerDateCollection(int index) {
         if (casesPerDateCollectionBuilder_ == null) {
           return casesPerDateCollection_.get(index);
         } else {
@@ -2129,10 +2129,10 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder setCasesPerDateCollection(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO value) {
         if (casesPerDateCollectionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2146,10 +2146,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder setCasesPerDateCollection(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder builderForValue) {
         if (casesPerDateCollectionBuilder_ == null) {
           ensureCasesPerDateCollectionIsMutable();
           casesPerDateCollection_.set(index, builderForValue.build());
@@ -2160,9 +2160,9 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public Builder addCasesPerDateCollection(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate value) {
+      public Builder addCasesPerDateCollection(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO value) {
         if (casesPerDateCollectionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2176,10 +2176,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder addCasesPerDateCollection(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate value) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO value) {
         if (casesPerDateCollectionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2193,10 +2193,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder addCasesPerDateCollection(
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder builderForValue) {
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder builderForValue) {
         if (casesPerDateCollectionBuilder_ == null) {
           ensureCasesPerDateCollectionIsMutable();
           casesPerDateCollection_.add(builderForValue.build());
@@ -2207,10 +2207,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder addCasesPerDateCollection(
-          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder builderForValue) {
+          int index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder builderForValue) {
         if (casesPerDateCollectionBuilder_ == null) {
           ensureCasesPerDateCollectionIsMutable();
           casesPerDateCollection_.add(index, builderForValue.build());
@@ -2221,10 +2221,10 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder addAllCasesPerDateCollection(
-          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate> values) {
+          java.lang.Iterable<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO> values) {
         if (casesPerDateCollectionBuilder_ == null) {
           ensureCasesPerDateCollectionIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2236,7 +2236,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder clearCasesPerDateCollection() {
         if (casesPerDateCollectionBuilder_ == null) {
@@ -2249,7 +2249,7 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
       public Builder removeCasesPerDateCollection(int index) {
         if (casesPerDateCollectionBuilder_ == null) {
@@ -2262,16 +2262,16 @@ public final class CoronavirusTrackerCoreProtos {
         return this;
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder getCasesPerDateCollectionBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder getCasesPerDateCollectionBuilder(
           int index) {
         return getCasesPerDateCollectionFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder getCasesPerDateCollectionOrBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder getCasesPerDateCollectionOrBuilder(
           int index) {
         if (casesPerDateCollectionBuilder_ == null) {
           return casesPerDateCollection_.get(index);  } else {
@@ -2279,9 +2279,9 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder> 
+      public java.util.List<? extends coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder> 
            getCasesPerDateCollectionOrBuilderList() {
         if (casesPerDateCollectionBuilder_ != null) {
           return casesPerDateCollectionBuilder_.getMessageOrBuilderList();
@@ -2290,33 +2290,33 @@ public final class CoronavirusTrackerCoreProtos {
         }
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder addCasesPerDateCollectionBuilder() {
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder addCasesPerDateCollectionBuilder() {
         return getCasesPerDateCollectionFieldBuilder().addBuilder(
-            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.getDefaultInstance());
+            coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder addCasesPerDateCollectionBuilder(
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder addCasesPerDateCollectionBuilder(
           int index) {
         return getCasesPerDateCollectionFieldBuilder().addBuilder(
-            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.getDefaultInstance());
+            index, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.getDefaultInstance());
       }
       /**
-       * <code>repeated .entities.CasesPerDate casesPerDateCollection = 1;</code>
+       * <code>repeated .entities.CasesPerDateDTO casesPerDateCollection = 1;</code>
        */
-      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder> 
+      public java.util.List<coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder> 
            getCasesPerDateCollectionBuilderList() {
         return getCasesPerDateCollectionFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder> 
+          coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder> 
           getCasesPerDateCollectionFieldBuilder() {
         if (casesPerDateCollectionBuilder_ == null) {
           casesPerDateCollectionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder>(
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder>(
                   casesPerDateCollection_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -2338,48 +2338,48 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.CasesPerDateCollection)
+      // @@protoc_insertion_point(builder_scope:entities.CasesPerDateCollectionDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.CasesPerDateCollection)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.CasesPerDateCollectionDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<CasesPerDateCollection>
-        PARSER = new com.google.protobuf.AbstractParser<CasesPerDateCollection>() {
+    private static final com.google.protobuf.Parser<CasesPerDateCollectionDTO>
+        PARSER = new com.google.protobuf.AbstractParser<CasesPerDateCollectionDTO>() {
       @java.lang.Override
-      public CasesPerDateCollection parsePartialFrom(
+      public CasesPerDateCollectionDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CasesPerDateCollection(input, extensionRegistry);
+        return new CasesPerDateCollectionDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<CasesPerDateCollection> parser() {
+    public static com.google.protobuf.Parser<CasesPerDateCollectionDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<CasesPerDateCollection> getParserForType() {
+    public com.google.protobuf.Parser<CasesPerDateCollectionDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollection getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateCollectionDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface CountryOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.Country)
+  public interface CountryDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.CountryDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2412,23 +2412,23 @@ public final class CoronavirusTrackerCoreProtos {
      */
     double getLongitude();
 
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.LatitudeNullableCase getLatitudeNullableCase();
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.LatitudeNullableCase getLatitudeNullableCase();
 
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.LongitudeNullableCase getLongitudeNullableCase();
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.LongitudeNullableCase getLongitudeNullableCase();
   }
   /**
-   * Protobuf type {@code entities.Country}
+   * Protobuf type {@code entities.CountryDTO}
    */
-  public  static final class Country extends
+  public  static final class CountryDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.Country)
-      CountryOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.CountryDTO)
+      CountryDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Country.newBuilder() to construct.
-    private Country(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CountryDTO.newBuilder() to construct.
+    private CountryDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Country() {
+    private CountryDTO() {
       countryName_ = "";
     }
 
@@ -2436,7 +2436,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Country();
+      return new CountryDTO();
     }
 
     @java.lang.Override
@@ -2444,7 +2444,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Country(
+    private CountryDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2509,15 +2509,15 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Country_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountryDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Country_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountryDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder.class);
     }
 
     private int latitudeNullableCase_ = 0;
@@ -2749,10 +2749,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO) obj;
 
       if (!getCountryName()
           .equals(other.getCountryName())) return false;
@@ -2830,69 +2830,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2905,7 +2905,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2921,26 +2921,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.Country}
+     * Protobuf type {@code entities.CountryDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.Country)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.CountryDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Country_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountryDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Country_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountryDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2970,17 +2970,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_Country_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CountryDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2988,8 +2988,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO(this);
         result.countryName_ = countryName_;
         if (latitudeNullableCase_ == 2) {
           result.latitudeNullable_ = latitudeNullable_;
@@ -3043,16 +3043,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO.getDefaultInstance()) return this;
         if (!other.getCountryName().isEmpty()) {
           countryName_ = other.countryName_;
           onChanged();
@@ -3098,11 +3098,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3343,48 +3343,48 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.Country)
+      // @@protoc_insertion_point(builder_scope:entities.CountryDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.Country)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.CountryDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Country>
-        PARSER = new com.google.protobuf.AbstractParser<Country>() {
+    private static final com.google.protobuf.Parser<CountryDTO>
+        PARSER = new com.google.protobuf.AbstractParser<CountryDTO>() {
       @java.lang.Override
-      public Country parsePartialFrom(
+      public CountryDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Country(input, extensionRegistry);
+        return new CountryDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Country> parser() {
+    public static com.google.protobuf.Parser<CountryDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Country> getParserForType() {
+    public com.google.protobuf.Parser<CountryDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.Country getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CountryDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface StateOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.State)
+  public interface StateDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.StateDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3417,23 +3417,23 @@ public final class CoronavirusTrackerCoreProtos {
      */
     double getLongitude();
 
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.LatitudeNullableCase getLatitudeNullableCase();
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.LatitudeNullableCase getLatitudeNullableCase();
 
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.LongitudeNullableCase getLongitudeNullableCase();
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.LongitudeNullableCase getLongitudeNullableCase();
   }
   /**
-   * Protobuf type {@code entities.State}
+   * Protobuf type {@code entities.StateDTO}
    */
-  public  static final class State extends
+  public  static final class StateDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.State)
-      StateOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.StateDTO)
+      StateDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use State.newBuilder() to construct.
-    private State(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use StateDTO.newBuilder() to construct.
+    private StateDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private State() {
+    private StateDTO() {
       stateName_ = "";
     }
 
@@ -3441,7 +3441,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new State();
+      return new StateDTO();
     }
 
     @java.lang.Override
@@ -3449,7 +3449,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private State(
+    private StateDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3514,15 +3514,15 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_State_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StateDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_State_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StateDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder.class);
     }
 
     private int latitudeNullableCase_ = 0;
@@ -3754,10 +3754,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO) obj;
 
       if (!getStateName()
           .equals(other.getStateName())) return false;
@@ -3835,69 +3835,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3910,7 +3910,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3926,26 +3926,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.State}
+     * Protobuf type {@code entities.StateDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.State)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.StateDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_State_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StateDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_State_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StateDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3975,17 +3975,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_State_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_StateDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3993,8 +3993,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO(this);
         result.stateName_ = stateName_;
         if (latitudeNullableCase_ == 2) {
           result.latitudeNullable_ = latitudeNullable_;
@@ -4048,16 +4048,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO.getDefaultInstance()) return this;
         if (!other.getStateName().isEmpty()) {
           stateName_ = other.stateName_;
           onChanged();
@@ -4103,11 +4103,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4348,48 +4348,48 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.State)
+      // @@protoc_insertion_point(builder_scope:entities.StateDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.State)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.StateDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<State>
-        PARSER = new com.google.protobuf.AbstractParser<State>() {
+    private static final com.google.protobuf.Parser<StateDTO>
+        PARSER = new com.google.protobuf.AbstractParser<StateDTO>() {
       @java.lang.Override
-      public State parsePartialFrom(
+      public StateDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new State(input, extensionRegistry);
+        return new StateDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<State> parser() {
+    public static com.google.protobuf.Parser<StateDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<State> getParserForType() {
+    public com.google.protobuf.Parser<StateDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.State getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.StateDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface CasesPerDateOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:entities.CasesPerDate)
+  public interface CasesPerDateDTOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:entities.CasesPerDateDTO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4408,18 +4408,18 @@ public final class CoronavirusTrackerCoreProtos {
     int getNumberOfCases();
   }
   /**
-   * Protobuf type {@code entities.CasesPerDate}
+   * Protobuf type {@code entities.CasesPerDateDTO}
    */
-  public  static final class CasesPerDate extends
+  public  static final class CasesPerDateDTO extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:entities.CasesPerDate)
-      CasesPerDateOrBuilder {
+      // @@protoc_insertion_point(message_implements:entities.CasesPerDateDTO)
+      CasesPerDateDTOOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use CasesPerDate.newBuilder() to construct.
-    private CasesPerDate(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CasesPerDateDTO.newBuilder() to construct.
+    private CasesPerDateDTO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private CasesPerDate() {
+    private CasesPerDateDTO() {
       date_ = "";
     }
 
@@ -4427,7 +4427,7 @@ public final class CoronavirusTrackerCoreProtos {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new CasesPerDate();
+      return new CasesPerDateDTO();
     }
 
     @java.lang.Override
@@ -4435,7 +4435,7 @@ public final class CoronavirusTrackerCoreProtos {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private CasesPerDate(
+    private CasesPerDateDTO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4485,15 +4485,15 @@ public final class CoronavirusTrackerCoreProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDate_descriptor;
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateDTO_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDate_fieldAccessorTable
+      return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateDTO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder.class);
+              coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder.class);
     }
 
     public static final int DATE_FIELD_NUMBER = 1;
@@ -4585,10 +4585,10 @@ public final class CoronavirusTrackerCoreProtos {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate)) {
+      if (!(obj instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO)) {
         return super.equals(obj);
       }
-      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate) obj;
+      coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO other = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO) obj;
 
       if (!getDate()
           .equals(other.getDate())) return false;
@@ -4614,69 +4614,69 @@ public final class CoronavirusTrackerCoreProtos {
       return hash;
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(byte[] data)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseDelimitedFrom(java.io.InputStream input)
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseDelimitedFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parseFrom(
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4689,7 +4689,7 @@ public final class CoronavirusTrackerCoreProtos {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate prototype) {
+    public static Builder newBuilder(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4705,26 +4705,26 @@ public final class CoronavirusTrackerCoreProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code entities.CasesPerDate}
+     * Protobuf type {@code entities.CasesPerDateDTO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:entities.CasesPerDate)
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateOrBuilder {
+        // @@protoc_insertion_point(builder_implements:entities.CasesPerDateDTO)
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDate_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateDTO_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDate_fieldAccessorTable
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateDTO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.Builder.class);
+                coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.class, coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.Builder.class);
       }
 
-      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.newBuilder()
+      // Construct using coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4752,17 +4752,17 @@ public final class CoronavirusTrackerCoreProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDate_descriptor;
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.internal_static_entities_CasesPerDateDTO_descriptor;
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getDefaultInstanceForType() {
-        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.getDefaultInstance();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getDefaultInstanceForType() {
+        return coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.getDefaultInstance();
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate build() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate result = buildPartial();
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO build() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4770,8 +4770,8 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
       @java.lang.Override
-      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate buildPartial() {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate(this);
+      public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO buildPartial() {
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO result = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO(this);
         result.date_ = date_;
         result.numberOfCases_ = numberOfCases_;
         onBuilt();
@@ -4812,16 +4812,16 @@ public final class CoronavirusTrackerCoreProtos {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate) {
-          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate)other);
+        if (other instanceof coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO) {
+          return mergeFrom((coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate other) {
-        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate.getDefaultInstance()) return this;
+      public Builder mergeFrom(coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO other) {
+        if (other == coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO.getDefaultInstance()) return this;
         if (!other.getDate().isEmpty()) {
           date_ = other.date_;
           onChanged();
@@ -4844,11 +4844,11 @@ public final class CoronavirusTrackerCoreProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate parsedMessage = null;
+        coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate) e.getUnfinishedMessage();
+          parsedMessage = (coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4965,76 +4965,76 @@ public final class CoronavirusTrackerCoreProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:entities.CasesPerDate)
+      // @@protoc_insertion_point(builder_scope:entities.CasesPerDateDTO)
     }
 
-    // @@protoc_insertion_point(class_scope:entities.CasesPerDate)
-    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:entities.CasesPerDateDTO)
+    private static final coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate();
+      DEFAULT_INSTANCE = new coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO();
     }
 
-    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getDefaultInstance() {
+    public static coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<CasesPerDate>
-        PARSER = new com.google.protobuf.AbstractParser<CasesPerDate>() {
+    private static final com.google.protobuf.Parser<CasesPerDateDTO>
+        PARSER = new com.google.protobuf.AbstractParser<CasesPerDateDTO>() {
       @java.lang.Override
-      public CasesPerDate parsePartialFrom(
+      public CasesPerDateDTO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CasesPerDate(input, extensionRegistry);
+        return new CasesPerDateDTO(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<CasesPerDate> parser() {
+    public static com.google.protobuf.Parser<CasesPerDateDTO> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<CasesPerDate> getParserForType() {
+    public com.google.protobuf.Parser<CasesPerDateDTO> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDate getDefaultInstanceForType() {
+    public coronavirus.tracker.core.api.CoronavirusTrackerCoreProtos.CasesPerDateDTO getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_Countries_descriptor;
+    internal_static_entities_CountriesDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_Countries_fieldAccessorTable;
+      internal_static_entities_CountriesDTO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_States_descriptor;
+    internal_static_entities_StatesDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_States_fieldAccessorTable;
+      internal_static_entities_StatesDTO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_CasesPerDateCollection_descriptor;
+    internal_static_entities_CasesPerDateCollectionDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_CasesPerDateCollection_fieldAccessorTable;
+      internal_static_entities_CasesPerDateCollectionDTO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_Country_descriptor;
+    internal_static_entities_CountryDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_Country_fieldAccessorTable;
+      internal_static_entities_CountryDTO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_State_descriptor;
+    internal_static_entities_StateDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_State_fieldAccessorTable;
+      internal_static_entities_StateDTO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_entities_CasesPerDate_descriptor;
+    internal_static_entities_CasesPerDateDTO_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_entities_CasesPerDate_fieldAccessorTable;
+      internal_static_entities_CasesPerDateDTO_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5044,63 +5044,64 @@ public final class CoronavirusTrackerCoreProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014protos.proto\022\010entities\"1\n\tCountries\022$\n" +
-      "\tcountries\030\001 \003(\0132\021.entities.Country\")\n\006S" +
-      "tates\022\037\n\006states\030\001 \003(\0132\017.entities.State\"P" +
-      "\n\026CasesPerDateCollection\0226\n\026casesPerDate" +
-      "Collection\030\001 \003(\0132\026.entities.CasesPerDate" +
-      "\"\254\001\n\007Country\022\024\n\014country_name\030\001 \001(\t\022\032\n\020la" +
-      "titude_is_null\030\002 \001(\010H\000\022\022\n\010latitude\030\003 \001(\001" +
-      "H\000\022\033\n\021longitude_is_null\030\004 \001(\010H\001\022\023\n\tlongi" +
-      "tude\030\005 \001(\001H\001B\023\n\021latitude_nullableB\024\n\022lon" +
-      "gitude_nullable\"\250\001\n\005State\022\022\n\nstate_name\030" +
-      "\001 \001(\t\022\032\n\020latitude_is_null\030\002 \001(\010H\000\022\022\n\010lat" +
-      "itude\030\003 \001(\001H\000\022\033\n\021longitude_is_null\030\004 \001(\010" +
-      "H\001\022\023\n\tlongitude\030\005 \001(\001H\001B\023\n\021latitude_null" +
-      "ableB\024\n\022longitude_nullable\"5\n\014CasesPerDa" +
-      "te\022\014\n\004date\030\001 \001(\t\022\027\n\017number_of_cases\030\002 \001(" +
-      "\005B<\n\034coronavirus.tracker.core.apiB\034Coron" +
-      "avirusTrackerCoreProtosb\006proto3"
+      "\n\014protos.proto\022\010entities\"7\n\014CountriesDTO" +
+      "\022\'\n\tcountries\030\001 \003(\0132\024.entities.CountryDT" +
+      "O\"/\n\tStatesDTO\022\"\n\006states\030\001 \003(\0132\022.entitie" +
+      "s.StateDTO\"V\n\031CasesPerDateCollectionDTO\022" +
+      "9\n\026casesPerDateCollection\030\001 \003(\0132\031.entiti" +
+      "es.CasesPerDateDTO\"\257\001\n\nCountryDTO\022\024\n\014cou" +
+      "ntry_name\030\001 \001(\t\022\032\n\020latitude_is_null\030\002 \001(" +
+      "\010H\000\022\022\n\010latitude\030\003 \001(\001H\000\022\033\n\021longitude_is_" +
+      "null\030\004 \001(\010H\001\022\023\n\tlongitude\030\005 \001(\001H\001B\023\n\021lat" +
+      "itude_nullableB\024\n\022longitude_nullable\"\253\001\n" +
+      "\010StateDTO\022\022\n\nstate_name\030\001 \001(\t\022\032\n\020latitud" +
+      "e_is_null\030\002 \001(\010H\000\022\022\n\010latitude\030\003 \001(\001H\000\022\033\n" +
+      "\021longitude_is_null\030\004 \001(\010H\001\022\023\n\tlongitude\030" +
+      "\005 \001(\001H\001B\023\n\021latitude_nullableB\024\n\022longitud" +
+      "e_nullable\"8\n\017CasesPerDateDTO\022\014\n\004date\030\001 " +
+      "\001(\t\022\027\n\017number_of_cases\030\002 \001(\005B<\n\034coronavi" +
+      "rus.tracker.core.apiB\034CoronavirusTracker" +
+      "CoreProtosb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_entities_Countries_descriptor =
+    internal_static_entities_CountriesDTO_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_entities_Countries_fieldAccessorTable = new
+    internal_static_entities_CountriesDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_Countries_descriptor,
+        internal_static_entities_CountriesDTO_descriptor,
         new java.lang.String[] { "Countries", });
-    internal_static_entities_States_descriptor =
+    internal_static_entities_StatesDTO_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_entities_States_fieldAccessorTable = new
+    internal_static_entities_StatesDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_States_descriptor,
+        internal_static_entities_StatesDTO_descriptor,
         new java.lang.String[] { "States", });
-    internal_static_entities_CasesPerDateCollection_descriptor =
+    internal_static_entities_CasesPerDateCollectionDTO_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_entities_CasesPerDateCollection_fieldAccessorTable = new
+    internal_static_entities_CasesPerDateCollectionDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_CasesPerDateCollection_descriptor,
+        internal_static_entities_CasesPerDateCollectionDTO_descriptor,
         new java.lang.String[] { "CasesPerDateCollection", });
-    internal_static_entities_Country_descriptor =
+    internal_static_entities_CountryDTO_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_entities_Country_fieldAccessorTable = new
+    internal_static_entities_CountryDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_Country_descriptor,
+        internal_static_entities_CountryDTO_descriptor,
         new java.lang.String[] { "CountryName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "LatitudeNullable", "LongitudeNullable", });
-    internal_static_entities_State_descriptor =
+    internal_static_entities_StateDTO_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_entities_State_fieldAccessorTable = new
+    internal_static_entities_StateDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_State_descriptor,
+        internal_static_entities_StateDTO_descriptor,
         new java.lang.String[] { "StateName", "LatitudeIsNull", "Latitude", "LongitudeIsNull", "Longitude", "LatitudeNullable", "LongitudeNullable", });
-    internal_static_entities_CasesPerDate_descriptor =
+    internal_static_entities_CasesPerDateDTO_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_entities_CasesPerDate_fieldAccessorTable = new
+    internal_static_entities_CasesPerDateDTO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_entities_CasesPerDate_descriptor,
+        internal_static_entities_CasesPerDateDTO_descriptor,
         new java.lang.String[] { "Date", "NumberOfCases", });
   }
 
